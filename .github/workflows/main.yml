@@ -1,0 +1,34 @@
+name: BrokenCompass CI
+
+on: 
+  push:
+    tags:
+    - '0.*'
+    - '1.*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Get Version
+        shell: bash
+        id: get-version
+        run: echo "::set-output name=version::$(node ./.github/workflows/get-version.js)"
+
+#      - name: Install dependencies and run webpack
+#        run: |
+#          npm install --silent
+#          npm run build:production
+
+      - name: Create installable system zip file
+        run: cd system && zip -r ../brokencompass.zip *
+
+      - name: Create release
+        id: create_versioned_release
+        uses: ncipollo/release-action@v1
+        with:
+          name: ${{ steps.get-version.outputs.version }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+          artifacts: './system/system.json,./brokencompass.zip'

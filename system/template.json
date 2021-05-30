@@ -1,0 +1,18 @@
+{
+    "Actor": {
+        "types": ["character"],
+        "templates": {},
+        "character": {
+            "heritage": ""
+        }
+    },
+    "Item": {
+        "types": ["tag"],
+        "templates": {
+        },
+        "tag": {
+            "name": "",
+            "description": ""
+        }
+    }
+}
