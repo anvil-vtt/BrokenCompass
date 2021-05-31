@@ -13,3 +13,21 @@ This is the **Broken Compass system** for FoundryVTT.
 **Manifest URL**: https://github.com/anvil-vtt/BrokenCompass/releases/latest/download/system.json
 
 For manual installation, use the provided manifest URL in the "*Install System*" popup window while managing game systems.
+
+## Dev Setup
+
+### NodeJS-Server aufsetzen
+
+#### MAC
+- download des Linux-Bundle
+- an gewünschten Ort entpacken ```z.B. ~/foundryVTT/```
+- Datenordner anlegen z. B. ```~/foundryVTT/data/fvtt08/foundrydata```  
+- in den entpackten Ordner wechseln z. B. ```cd foundryvtt-0.8.5```  
+- Nodeserver starten ```node resources/app/main.js --dataPath=$HOME/foundryVTT/data/fvtt08/foundrydata --port=30008```
+
+### Projekt linken
+
+#### MAC
+- Das Repository im Ordner ```system``` (z. B. ```~/foundryVTT/data/fvtt08/foundrydata/Data/systems```) linken z. B. 
+  ```ln -s ~/foundryVTT/dev/BrokenCompass/system/ brokencompass```
+- ggf. muss der Nodeserver neu gestartet werden
