@@ -66,6 +66,12 @@
                         "Old": "Old",
                         "Hurt": "Hurt",
                         "Wreck": "A Wreck"
+                    },
+                    "Sccesses":{
+                        "Basic": "Basic",
+                        "Critical": "Critical",
+                        "Extreme": "Extreme",
+                        "Impossible": "Impossible"
                     }
                 }
         }

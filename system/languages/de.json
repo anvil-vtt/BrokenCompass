@@ -66,6 +66,12 @@
                         "Old": "Alt",
                         "Hurt": "Verletzt",
                         "Wreck": "Ein Wrack"
+                    },
+                    "Sccesses":{
+                        "Basic": "Grundlegend",
+                        "Critical": "Kritisch",
+                        "Extreme": "Extrem",
+                        "Impossible": "Unmöglich"
                     }
                 }
         }
