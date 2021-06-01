@@ -1,5 +1,74 @@
 {
-    "BC": {
-        "name": "BrokenCompass"
-    }
+        "BC": {
+                "name": "BrokenCompass",
+                "Sheet": {
+                    "ID": {
+                        "Name": "",
+                        "Callme": "",
+                        "Heritage": "",
+                        "Homeland": "",
+                        "Workplace": ""
+                    },
+                    "Description" : {
+                        "descName" : "I am",
+                        "descCallme" : "Call me if you need a",
+                        "descNeedme" : "",
+                        "descHeritage" : "Heritage",
+                        "descHomeland" : "Homeland",
+                        "descWorkplace" : "Workplace",
+                        "descLuck" : "Luck",
+                        "descWord" : "words to live by",
+                        "descFeelings" : "I feel",
+                        "descExpertise" : "Expertise",
+                        "descWeapons" : "Weapons & Gear",
+                        "descScars" : "Scars and Experiences",
+                        "descPockets" : "Pockets",
+                        "descBackpack" : "Backpack",
+                        "descBag" : "Bag",
+                        "descMags" : "Mags"
+                    },
+                    "Attributes": {
+                        "Action": "Action",
+                        "Guts": "Guts",
+                        "Knowledge": "Knowledge",
+                        "Society": "Society",
+                        "Wild": "Wild",
+                        "Crime": "Crime"
+                    },
+                    "Skills": {
+                        "Fight": "Fight",
+                        "Leadership": "Leadership",
+                        "Stunt": "Stunt",
+                        "Cool": "Cool",
+                        "Drive": "Drive",
+                        "Shoot": "Shoot",
+                        "Culture": "Culture",
+                        "FirstAid": "FirstAid",
+                        "Tech": "Tech",
+                        "Charm": "Charm",
+                        "Eloquence": "Eloquence",
+                        "Observation": "Observation",
+                        "Scout": "Scout",
+                        "Survival": "Survival",
+                        "Tough": "Tough",
+                        "Alert": "Alert",
+                        "Dexterity": "Dexterity",
+                        "Stealth": "Stealth"
+                    },
+                    "Feelings":{
+                        "Powerful": "Powerful",
+                        "Bleeding": "Bleeding",
+                        "Daring": "Daring",
+                        "Shocked": "Shocked",
+                        "Focused": "Focused",
+                        "Dizzy": "Dizzy",
+                        "Confident": "Confident",
+                        "Embarrassed": "Embarrassed",
+                        "Fierce": "Fierce",
+                        "Broken": "Broken",
+                        "Untouchable": "Untouchable",
+                        "Scared": "Scared"
+                    }
+                }
+        }
 }
