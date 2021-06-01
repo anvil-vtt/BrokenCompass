@@ -6,7 +6,7 @@
                         "Name" : "Ich bin",
                         "Callme" : "Ruf mich wenn Du eine/n",
                         "Needme" : "brauchst",
-			"Feelathome": "Ich fühle mich hier zu Hause",
+                        "Feelathome": "Ich fühle mich hier zu Hause",
                         "Heritage" : "Herkunft",
                         "Homeland" : "Heimat",
                         "Workplace" : "Arbeitsort",
@@ -61,7 +61,11 @@
                         "Fierce": "Wild",
                         "Broken": "Gebrochen",
                         "Untouchable": "Unantastbar",
-                        "Scared": "Veränstigt"
+                        "Scared": "Veränstigt",
+                        "Young": "Jung",
+                        "Old": "Alt",
+                        "Hurt": "Verletzt",
+                        "Wreck": "Ein Wrack"
                     }
                 }
         }

@@ -6,7 +6,7 @@
                         "Name" : "I am",
                         "Callme" : "Call me if you need a",
                         "Needme" : "",
-			"Feelathome": "Places I call home",
+                        "Feelathome": "Places I call home",
                         "Heritage" : "Heritage",
                         "Homeland" : "Homeland",
                         "Workplace" : "Workplace",
@@ -61,7 +61,11 @@
                         "Fierce": "Fierce",
                         "Broken": "Broken",
                         "Untouchable": "Untouchable",
-                        "Scared": "Scared"
+                        "Scared": "Scared",
+                        "Young": "Young",
+                        "Old": "Old",
+                        "Hurt": "Hurt",
+                        "Wreck": "A Wreck"
                     }
                 }
         }
