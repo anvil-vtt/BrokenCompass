@@ -18,7 +18,7 @@ For manual installation, use the provided manifest URL in the "*Install System*"
 
 ### NodeJS-Server aufsetzen
 
-#### MAC
+#### MAC/Linux
 - download des Linux-Bundle
 - an gewünschten Ort entpacken ```z.B. ~/foundryVTT/```
 - Datenordner anlegen z. B. ```~/foundryVTT/data/fvtt08/foundrydata```  
@@ -34,7 +34,7 @@ For manual installation, use the provided manifest URL in the "*Install System*"
 
 ### Projekt linken
 
-#### MAC
+#### MAC/Linux
 - Das Repository im Ordner ```system``` (z. B. ```~/foundryVTT/data/fvtt08/foundrydata/Data/systems```) linken z. B. 
   ```ln -s ~/foundryVTT/dev/BrokenCompass/system/ brokencompass```
 - ggf. muss der Nodeserver neu gestartet werden
