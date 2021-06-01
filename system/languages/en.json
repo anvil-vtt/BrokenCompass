@@ -2,32 +2,25 @@
         "BC": {
                 "name": "BrokenCompass",
                 "Sheet": {
-                    "ID": {
-                        "Name": "",
-                        "Callme": "",
-                        "Heritage": "",
-                        "Homeland": "",
-                        "Workplace": ""
-                    },
                     "Description" : {
-                        "descName" : "I am",
-                        "descCallme" : "Call me if you need a",
-                        "descNeedme" : "",
-                        "descHeritage" : "Heritage",
-                        "descHomeland" : "Homeland",
-                        "descWorkplace" : "Workplace",
-                        "descLuck" : "Luck",
-                        "descWord" : "words to live by",
-                        "descFeelings" : "I feel",
-                        "descExpertise" : "Expertise",
-                        "descWeapons" : "Weapons & Gear",
-                        "descScars" : "Scars and Experiences",
-                        "descPockets" : "Pockets",
-                        "descBackpack" : "Backpack",
-                        "descBag" : "Bag",
-                        "descMags" : "Mags"
+                        "Name" : "I am",
+                        "Callme" : "Call me if you need a",
+                        "Needme" : "",
+                        "Heritage" : "Heritage",
+                        "Homeland" : "Homeland",
+                        "Workplace" : "Workplace",
+                        "Luck" : "Luck",
+                        "Word" : "words to live by",
+                        "Feelings" : "I feel",
+                        "Expertise" : "Expertise",
+                        "Weapons" : "Weapons & Gear",
+                        "Scars" : "Scars and Experiences",
+                        "Pockets" : "Pockets",
+                        "Backpack" : "Backpack",
+                        "Bag" : "Bag",
+                        "Mags" : "Mags"
                     },
-                    "Attributes": {
+                    "Fields": {
                         "Action": "Action",
                         "Guts": "Guts",
                         "Knowledge": "Knowledge",
