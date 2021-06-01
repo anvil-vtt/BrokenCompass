@@ -1,17 +1,18 @@
 {
-  "Actor": {
-    "types": ["character"],
-    "templates": {},
-    "character": {
-      "heritage": ""
+    "Actor": {
+        "types": ["character"],
+        "templates": {},
+        "character": {
+            "heritage": ""
+        }
+    },
+    "Item": {
+        "types": ["tag"],
+        "templates": {
+        },
+        "tag": {
+            "name": "",
+            "description": ""
+        }
     }
-  },
-  "Item": {
-    "types": ["tag"],
-    "templates": {},
-    "tag": {
-      "name": "",
-      "description": ""
-    }
-  }
 }

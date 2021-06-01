@@ -1,10 +1,10 @@
 name: BrokenCompass CI
 
-on:
+on: 
   push:
     tags:
-      - "0.*"
-      - "1.*"
+    - '0.*'
+    - '1.*'
 
 jobs:
   build:
@@ -17,10 +17,10 @@ jobs:
         id: get-version
         run: echo "::set-output name=version::$(node ./.github/workflows/get-version.js)"
 
-      #      - name: Install dependencies and run webpack
-      #        run: |
-      #          npm install --silent
-      #          npm run build:production
+#      - name: Install dependencies and run webpack
+#        run: |
+#          npm install --silent
+#          npm run build:production
 
       - name: Create installable system zip file
         run: cd system && zip -r ../brokencompass.zip *
@@ -31,4 +31,4 @@ jobs:
         with:
           name: ${{ steps.get-version.outputs.version }}
           token: ${{ secrets.GITHUB_TOKEN }}
-          artifacts: "./system/system.json,./brokencompass.zip"
+          artifacts: './system/system.json,./brokencompass.zip'
