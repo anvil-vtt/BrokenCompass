@@ -1,0 +1,27 @@
+{
+  "name": "brokencompass",
+  "version": "1.0.0",
+  "description": "The basic Broken Compass system for FoundryVTT",
+  "private": true,
+  "scripts": {
+    "prettier": "prettier --check .",
+    "prettier:fix": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anvil-vtt/BrokenCompass.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^2.3.0"
+  },
+  "browserslist": [
+    "defaults",
+    "not ie < 11",
+    "last 2 versions",
+    "> 1%",
+    "iOS 7",
+    "last 3 iOS versions"
+  ]
+}
