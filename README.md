@@ -25,9 +25,21 @@ For manual installation, use the provided manifest URL in the "*Install System*"
 - in den entpackten Ordner wechseln z. B. ```cd foundryvtt-0.8.5```  
 - Nodeserver starten ```node resources/app/main.js --dataPath=$HOME/foundryVTT/data/fvtt08/foundrydata --port=30008```
 
+#### WIN
+- download node.js als Setup für Windows und installieren
+- download des Linux-Bundle von FoundryVTT
+- am gewünschten Ort entpacken z.B.  ```d:\foundry8\foundryVTT```
+- Datenordner anlegen z. B. ```d:\foundry8\foundrydata```  
+- in der Konsole Nodeserver starten z.B. ```c:\Program Files\nodejs\node.exe d:\foundry8\foundryvtt\resources\app\main.js --dataPath=d:\foundry8\foundrydata```
+
 ### Projekt linken
 
 #### MAC
 - Das Repository im Ordner ```system``` (z. B. ```~/foundryVTT/data/fvtt08/foundrydata/Data/systems```) linken z. B. 
   ```ln -s ~/foundryVTT/dev/BrokenCompass/system/ brokencompass```
+- ggf. muss der Nodeserver neu gestartet werden
+
+#### WIN
+- das Repository in der Konsole (mit Adminrechten) im Ordner ```system``` linken 
+- z.B. ```mklink /d d:\nodejs\foundry8\foundrydata\Data\systems\brokencompass d:\dev\brokencompass\system```
 - ggf. muss der Nodeserver neu gestartet werden
