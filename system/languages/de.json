@@ -1,0 +1,68 @@
+{
+        "BC": {
+                "name": "BrokenCompass",
+                "Sheet": {
+                    "Description" : {
+                        "Name" : "Ich bin",
+                        "Callme" : "Ruf mich wenn Du eine/n",
+                        "Needme" : "brauchst",
+			"Feelathome": "Ich fühle mich hier zu Hause
+                        "Heritage" : "Herkunft",
+                        "Homeland" : "Heimat",
+                        "Workplace" : "Arbeitsort",
+                        "Luck" : "Glück",
+                        "Word" : "Lebensmotto",
+                        "Feelings" : "Ich fühle mich",
+                        "Expertise" : "Expertise",
+                        "Weapons" : "Waffen & Ausrüstung",
+                        "Scars" : "Narben und Erfahrungen",
+                        "Pockets" : "Taschen",
+                        "Backpack" : "Rucksack",
+                        "Bag" : "Beutel",
+                        "Mags" : "Magazine"
+                    },
+                    "Fields": {
+                        "Action": "Action",
+                        "Guts": "Mumm",
+                        "Knowledge": "Wissen",
+                        "Society": "Gesellschaft",
+                        "Wild": "Wildnis",
+                        "Crime": "Verbrechen"
+                    },
+                    "Skills": {
+                        "Fight": "Kampf",
+                        "Leadership": "Führung",
+                        "Stunt": "Stunt",
+                        "Cool": "Coolness",
+                        "Drive": "Fahren",
+                        "Shoot": "Schiessen",
+                        "Culture": "Kulturen",
+                        "FirstAid": "Erste Hilfe",
+                        "Tech": "Technik",
+                        "Charm": "Charme",
+                        "Eloquence": "Redegewandtheit",
+                        "Observation": "Wahrnehmung",
+                        "Scout": "Kundschaften",
+                        "Survival": "Überleben",
+                        "Tough": "Zähigkeit",
+                        "Alert": "Aufmerksamkeit",
+                        "Dexterity": "Geschicklichkeit",
+                        "Stealth": "Heimlichkeit"
+                    },
+                    "Feelings":{
+                        "Powerful": "Kraftvoll",
+                        "Bleeding": "Blutend",
+                        "Daring": "Tollkühn",
+                        "Shocked": "Erschüttert",
+                        "Focused": "Fokussiert",
+                        "Dizzy": "Benommen",
+                        "Confident": "Selbstsicher",
+                        "Embarrassed": "Verlegen",
+                        "Fierce": "Wild",
+                        "Broken": "Gebrochen",
+                        "Untouchable": "Unantastbar",
+                        "Scared": "Veränstigt"
+                    }
+                }
+        }
+}
