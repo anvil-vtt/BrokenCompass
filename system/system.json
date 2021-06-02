@@ -4,7 +4,7 @@
   "description": "The basic Broken Compass system for FoundryVTT",
   "version": "0.0.1",
   "author": "",
-  "scripts": ["system.js"],
+  "script": ["system.js"],
   "styles": [],
   "languages": [
     {
