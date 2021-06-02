@@ -16,9 +16,11 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "@typhonjs-fvtt/eslint-config-foundry.js": "^0.8.0",
     "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^9.0.0",
     "eslint": "^7.27.0",
+    "eslint-webpack-plugin": "^2.5.4",
     "prettier": "^2.3.0",
     "prettier-loader": "^3.3.0",
     "webpack": "^5.38.1",

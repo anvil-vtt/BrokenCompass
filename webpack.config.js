@@ -1,6 +1,7 @@
 const path = require("path");
-const {CleanWebpackPlugin} = require("clean-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
+const ESLintPlugin = require("eslint-webpack-plugin");
 
 module.exports = (env) => {
   const config = {
@@ -17,16 +18,17 @@ module.exports = (env) => {
       rules: [
         {
           test: /\.js$/,
-          loader: 'prettier-loader',
+          loader: "prettier-loader",
           exclude: /node_modules/,
-        }
-      ]
+        },
+      ],
     },
     plugins: [
       new CleanWebpackPlugin(),
       new CopyPlugin({
-        patterns: [{from: "system"}],
+        patterns: [{ from: "system" }],
       }),
+      new ESLintPlugin(),
     ],
   };
 
