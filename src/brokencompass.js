@@ -17,9 +17,7 @@ Hooks.once("init", async () => {
   Actors.unregisterSheet("core", ActorSheet);
   Items.unregisterSheet("core", ItemSheet);
 
-  console.log("Test");
-
-  // Register FateX actor sheets
+  // Register BrokenCompass actor sheets
   Actors.registerSheet("brokencompass", BCActorSheet, {
     types: ["character"],
     makeDefault: true,
