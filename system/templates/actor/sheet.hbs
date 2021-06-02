@@ -1,0 +1,27 @@
+{{log this}}
+<form autocomplete="off" class="{{cssClass}}">
+  <input name="name" type="text" value="{{actor.data.name}}" />
+
+  <label for="data.heritage">{{localize "BC.Sheet.Descriptions.Heritage"}}</label>
+  <input name="data.heritage" type="text" value="{{actor.data.data.heritage}}" />
+
+  Name = {{actor.data.name}}
+
+  {{#each fields}}
+    <div>
+      {{this.name}}
+      <div>
+        <span>Skills:</span>
+        {{#each this.skills}}
+           {{this.name}} - <span data-roll="{{this.value}}d6">{{this.value}}</span>
+        {{/each}}
+      </div>
+    </div>
+  {{/each}}
+
+  {{#each numbers}}
+    <div data-roll="{{this}}d6">{{this}}</div>
+  {{/each}}
+
+
+</form>
