@@ -8,19 +8,19 @@
   "styles": [],
   "languages": [
     {
-      "lang": "en",
-      "name": "English",
-      "path": "languages/en.json"
-    },
-    {
-      "lang": "de",
-      "name": "Deutsch",
-      "path": "languages/de.json"
-    }
-  ],
-  "minimumCoreVersion": "0.8.5",
-  "compatibleCoreVersion": "0.8.6",
-  "url": "https://github.com/anvil-vtt/BrokenCompass",
-  "manifest": "https://github.com/anvil-vtt/BrokenCompass/releases/latest/download/system.json",
-  "download": "https://github.com/anvil-vtt/BrokenCompass/releases/latest/download/brokencompass.zip"
+      "lang": 'en',
+            "name": "English",
+            "path": "languages/en.json"
+        },
+        {
+            "lang": "de",
+            "name": "Deutsch",
+            "path": "languages/de.json"
+        }
+    ],
+    "minimumCoreVersion": "0.8.5",
+    "compatibleCoreVersion": "0.8.6",
+    "url": "https://github.com/anvil-vtt/BrokenCompass",
+            "manifest": "https://github.com/anvil-vtt/BrokenCompass/releases/latest/download/system.json",
+        "download": "https://github.com/anvil-vtt/BrokenCompass/releases/latest/download/brokencompass.zip"
 }
