@@ -1,0 +1,78 @@
+{
+  "BC": {
+    "name": "BrokenCompass",
+    "Sheet": {
+      "Descriptions": {
+        "Name": "Yo soy",
+        "Callme": "Llámame si necesitas un...",
+        "Needme": "",
+        "Feelathome": "Lugares que llamo Hogar",
+        "Heritage": "Herencia",
+        "Homeland": "Lugar de Nacimiento",
+        "Workplace": "Lugar de Trabajo",
+        "Luck": "Suerte",
+        "Word": "Valores por los que vivo",
+        "Feelings": "Me siento",
+        "Expertise": "Pericia",
+        "Weapons": "Armas y Equipo",
+        "Scars": "Cicatrices y Exepriencias",
+        "Pockets": "Bolsillos",
+        "Backpack": "Mochila",
+        "Bag": "Bolso",
+        "Mags": "Cartuchos"
+      },
+      "Fields": {
+        "Action": "Acción",
+        "Guts": "Agallas",
+        "Knowledge": "Conocimiento",
+        "Society": "Sociedad",
+        "Wild": "Salvaje",
+        "Crime": "Crimen"
+      },
+      "Skills": {
+        "Fight": "Lucha",
+        "Leadership": "Liderazgo",
+        "Stunt": "Acrobacia",
+        "Cool": "Cool",
+        "Drive": "Conducir",
+        "Shoot": "Disparo",
+        "Culture": "Cultura",
+        "FirstAid": "Primeros Auxilios",
+        "Tech": "Tecnología",
+        "Charm": "Encanto",
+        "Eloquence": "Elocuencia",
+        "Observation": "Observación",
+        "Scout": "Explorar",
+        "Survival": "Supervivencia",
+        "Tough": "Reistente",
+        "Alert": "Alerta",
+        "Dexterity": "Destreza",
+        "Stealth": "Sigilo"
+      },
+      "Feelings": {
+        "Powerful": "Poderoso",
+        "Bleeding": "Sangrando",
+        "Daring": "Amenazador",
+        "Shocked": "Sacudido",
+        "Focused": "Enfocado",
+        "Dizzy": "Mareado",
+        "Confident": "Convencido",
+        "Embarrassed": "Avergonzado",
+        "Fierce": "Feroz",
+        "Broken": "Roto",
+        "Untouchable": "Intocable",
+        "Scared": "Asustado",
+        "Young": "Joven",
+        "Old": "Viejo",
+        "Hurt": "Herido",
+        "Wreck": "Un desastre"
+      },
+      "Successes": {
+        "Basic": "Básico",
+        "Critical": "Crítico",
+        "Extreme": "Extremo",
+        "Impossible": "Imposible"
+      }
+    }
+  }
+}
