@@ -5,6 +5,8 @@
   <label for="data.heritage">{{localize "BC.Sheet.Descriptions.Heritage"}}</label>
   <input name="data.heritage" type="text" value="{{actor.data.data.heritage}}" />
 
+  Name = {{actor.data.name}}
+
   {{#each fields}}
     <div>
       {{this.name}}
@@ -16,5 +18,10 @@
       </div>
     </div>
   {{/each}}
+
+  {{#each numbers}}
+    <div data-roll="{{this}}d6">{{this}}</div>
+  {{/each}}
+
 
 </form>

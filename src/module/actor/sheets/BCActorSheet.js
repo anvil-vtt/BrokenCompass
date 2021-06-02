@@ -13,6 +13,7 @@ export class BCActorSheet extends ActorSheet {
       const rollString = e.currentTarget.dataset.roll;
 
       const roll = await new Roll(rollString).roll();
+
       await roll.toMessage();
     });
   }
@@ -48,6 +49,8 @@ export class BCActorSheet extends ActorSheet {
         skills: [],
       },
     ];
+
+    data.numbers = [...Array(10).keys()];
 
     return data;
   }
