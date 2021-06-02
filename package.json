@@ -4,6 +4,8 @@
   "description": "The basic Broken Compass system for FoundryVTT",
   "private": true,
   "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch",
     "prettier": "prettier --check .",
     "prettier:fix": "prettier --write ."
   },
@@ -14,6 +16,12 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "prettier": "^2.3.0"
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^9.0.0",
+    "eslint": "^7.27.0",
+    "prettier": "^2.3.0",
+    "prettier-loader": "^3.3.0",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.0"
   }
 }
