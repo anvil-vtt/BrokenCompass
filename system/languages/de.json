@@ -72,6 +72,12 @@
         "Critical": "Kritisch",
         "Extreme": "Extrem",
         "Impossible": "Unmöglich"
+      },
+      "RollTheDice": "Würfeln",
+      "Chat": {
+        "Roll": "Wurf",
+        "RestDice": "Restliche Würfel",
+        "Successes": "Erfolge"
       }
     }
   }

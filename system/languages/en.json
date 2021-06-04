@@ -72,6 +72,12 @@
         "Critical": "Critical",
         "Extreme": "Extreme",
         "Impossible": "Impossible"
+      },
+      "RollTheDice": "Roll the dice",
+      "Chat": {
+        "Roll": "Roll",
+        "RestDice": "Remaining dice",
+        "Successes": "Successes"
       }
     }
   }

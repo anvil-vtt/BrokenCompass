@@ -11,7 +11,8 @@ Hooks.once("init", async () => {
   CONFIG.Actor.entityClass = BCActor;
 
   // Preload all needed templates
-  //await TemplatePreloader.preloadHandlebarsTemplates();
+  // await TemplatePreloader.preloadHandlebarsTemplates();
+  await preloadHandlebarsTemplates();
 
   // Unregister Core sheets
   Actors.unregisterSheet("core", ActorSheet);
@@ -23,3 +24,8 @@ Hooks.once("init", async () => {
     makeDefault: true,
   });
 });
+
+async function preloadHandlebarsTemplates() {
+  const templatesPath = ["systems/brokencompass/templates/actor/dice-tray.hbs"];
+  return loadTemplates(templatesPath);
+}

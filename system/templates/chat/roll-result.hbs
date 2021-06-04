@@ -1,0 +1,40 @@
+<div>
+  <div style="display:block;">
+    <h2>{{localize "BC.Sheet.Chat.Roll"}}</h2>
+    {{#if this.pairsDice.length}}
+      <div style="display:block;">
+        <h3 style="margin: 0.5rem 0">Paare</h3>
+        {{#each this.pairsDice}}
+          <span
+            style="display:inline-block; width:2rem; height: 2rem; text-align:center;line-height:2rem; border: 1px solid;border-radius: 5px ">{{ this }}</span>
+        {{/each}}
+      </div>
+    {{/if}}
+
+    {{#if this.restDice.length}}
+      <div style="display:block;">
+        <h3 style="margin: 0.5rem 0">{{localize "BC.Sheet.Chat.RestDice"}}</h3>
+        {{#each this.restDice}}
+          <span
+            style="display:inline-block; width:2rem; height: 2rem; text-align:center;line-height:2rem; border: 1px solid;border-radius: 5px ">{{ this }}</span>
+        {{/each}}
+      </div>
+    {{/if}}
+
+  </div>
+  <hr>
+  <h2>{{localize "BC.Sheet.Chat.Successes"}}</h2>
+  <div>
+    {{localize "BC.Sheet.Successes.Basic"}} {{ this.successes.basic }}
+  </div>
+  <div>
+    {{localize "BC.Sheet.Successes.Critical"}} {{ this.successes.critical }}
+  </div>
+  <div>
+    {{localize "BC.Sheet.Successes.Extreme"}} {{ this.successes.extrem }}
+  </div>
+  <div>
+    {{localize "BC.Sheet.Successes.Impossible"}}{{ this.successes.impossible }}
+  </div>
+  <hr>
+</div>
