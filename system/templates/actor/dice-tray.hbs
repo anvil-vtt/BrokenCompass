@@ -1,5 +1,11 @@
 <div>
-  {{#each numbers}}
-    <div data-roll="{{this}}d6">{{this}}</div>
-  {{/each}}
+  <hr>
+  <h3>{{localize "BC.Sheet.RollTheDice"}}</h3>
+  <div style="display:flex;">
+    {{#each numbers}}
+      <button data-roll="{{this}}d6">{{this}}</button>
+    {{/each}}
+  </div>
+  <hr>
 </div>
+
