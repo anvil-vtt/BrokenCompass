@@ -4,10 +4,7 @@
     "es2021": true,
     "jquery": true
   },
-  "extends": [
-    "eslint:recommended",
-    "@typhonjs-fvtt/eslint-config-foundry.js"
-  ],
+  "extends": ["eslint:recommended", "@typhonjs-fvtt/eslint-config-foundry.js"],
   "parserOptions": {
     "ecmaVersion": 12,
     "sourceType": "module"
@@ -18,9 +15,7 @@
       {
         "builtinGlobals": true,
         "hoist": "all",
-        "allow": [
-          "event"
-        ]
+        "allow": ["event"]
       }
     ]
   }
