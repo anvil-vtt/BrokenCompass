@@ -1,3 +1,4 @@
+{{ log this }}
 <div data-actor="{{this.actor._id}}">
   <div style="display:block;">
     <h2>{{localize "BC.Sheet.Chat.Roll"}}</h2>
@@ -38,11 +39,19 @@
   </div>
   <hr>
 
-  <button data-action="reroll" data-values="{{this.restDice.length}}|{{this.pairsDice}}|{{this.rollCount}}|1">{{localize
-    "BC.Sheet.Chat.IHaveExpertise"}}</button>
-  <button data-action="reroll" data-values="{{this.restDice.length}}|{{this.pairsDice}}|{{this.rollCount}}|0">{{localize
-    "BC.Sheet.Chat.ReRoll"}}</button>
-  <button data-action="reroll" data-values="{{this.restDice.length}}|{{this.pairsDice}}|{{this.rollCount}}|0">{{localize
-    "BC.Sheet.Chat.AllIn"}}</button>
-
+  {{#if this.usExpertise}}
+    <button data-action="reroll"
+            data-values="{{this.restDice.length}}|{{this.pairsDice}}|{{this.rollCount}}|1">{{localize
+      "BC.Sheet.Chat.IHaveExpertise"}}</button>
+  {{/if}}
+  {{#if this.takeARisk}}
+    <button data-action="reroll"
+            data-values="{{this.restDice.length}}|{{this.pairsDice}}|{{this.rollCount}}|0">{{localize
+      "BC.Sheet.Chat.ReRoll"}}</button>
+  {{/if}}
+  {{#if this.allIn}}
+    <button data-action="reroll"
+            data-values="{{this.restDice.length}}|{{this.pairsDice}}|{{this.rollCount}}|0">{{localize
+      "BC.Sheet.Chat.AllIn"}}</button>
+  {{/if}}
 </div>

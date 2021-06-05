@@ -25,12 +25,13 @@ export async function chatDiceRoll(diceAmount, keepPairs, rollCount, actor, expe
     rollResult.successes.impossible = 0;
   }
 
-  rollCount++;
-
   const templateData = {
     ...rollResult,
-    rollCount: rollCount,
+    rollCount: rollCount + 1,
     actor: actor,
+    usExpertise: rollCount === 0,
+    takeARisk: rollCount === 0 && rollResult.hasGenerateSuccess,
+    allIn: rollCount === 1,
   };
   const chatData = {
     user: game.user?._id,
