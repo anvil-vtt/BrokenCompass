@@ -76,8 +76,12 @@
       "RollTheDice": "Würfeln",
       "Chat": {
         "Roll": "Wurf",
-        "RestDice": "Restliche Würfel",
-        "Successes": "Erfolge"
+        "RestDice": "Verbleibende Würfel",
+        "Successes": "Erfolge",
+        "IHaveExpertise": "Ich habe Expertise",
+        "ReRoll": "Es riskieren",
+        "EqualDice": "Gleiche Würfel",
+        "AllIn": "Alles oder NIchts"
       }
     }
   }
