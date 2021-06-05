@@ -1,3 +1,5 @@
+import "./scss/styles.scss";
+
 import { BCActor } from "./module/actor/BCActor";
 import { BCActorSheet } from "./module/actor/sheets/BCActorSheet";
 
