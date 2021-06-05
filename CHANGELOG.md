@@ -1,5 +1,14 @@
 # Changelog
 
+### 0.0.3
+
+- Added SASS support and stylelint
+- Added basic dice mechanics
+- Added webpack dev server
+- Added software license (MIT)
+- Updated all npm dependencies
+- Added third translation file (spanish)
+
 ### 0.0.2
 
 - Added basic sheet and code examples
