@@ -1,5 +1,6 @@
 import { BCActor } from "./module/actor/BCActor";
 import { BCActorSheet } from "./module/actor/sheets/BCActorSheet";
+import "./module/chat/chat-hooks";
 
 /* -------------------------------- */
 /*	System initialization			*/
@@ -24,6 +25,8 @@ Hooks.once("init", async () => {
     makeDefault: true,
   });
 });
+
+// Hooks.on("renderChatMessage", (app, html, data) => {});
 
 async function preloadHandlebarsTemplates() {
   const templatesPath = ["systems/brokencompass/templates/actor/dice-tray.hbs"];

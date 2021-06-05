@@ -49,3 +49,19 @@ export function evalDiceRoll(dices = [], keepPairs = []) {
     return result;
   }
 }
+
+export function reduceSuccess(rollResult) {
+  const successes = { ...rollResult.successes };
+
+  if (successes.basic > 0) {
+    successes.basic--;
+  } else if (successes.critical > 0) {
+    successes.critical--;
+  } else if (successes.extrem > 0) {
+    successes.extrem--;
+  } else if (successes.impossible > 0) {
+    successes.impossible--;
+  }
+
+  return { ...rollResult, successes };
+}

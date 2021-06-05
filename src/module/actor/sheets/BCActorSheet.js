@@ -1,4 +1,4 @@
-import { evalDiceRoll } from "../../bc-rules/dice-rolling";
+import { chatDiceRoll } from "../../chat/chat-dice-roll";
 
 export class BCActorSheet extends ActorSheet {
   static get defaultOptions() {
@@ -11,7 +11,7 @@ export class BCActorSheet extends ActorSheet {
   activateListeners(html) {
     super.activateListeners(html);
 
-    html.on("click", "[data-roll]", (e) => this._rollTheDice(e, this.actor));
+    html.on("click", "[data-roll]", this._rollTheDice.bind(this));
   }
 
   getData(options) {
@@ -51,32 +51,12 @@ export class BCActorSheet extends ActorSheet {
     return data;
   }
 
-  async _rollTheDice(e, actor) {
-    const template = "systems/brokencompass/templates/chat/roll-result.hbs";
-
+  async _rollTheDice(e) {
     const rollString = e.currentTarget.dataset.roll;
     if (!rollString) {
       return;
     }
-    const roll = await new Roll(rollString).roll();
-    const results = roll.terms[0] && roll.terms[0].results ? roll.terms[0].results : [];
-    const dice = results.reduce((acc, curVal) => [...acc, curVal.result], []);
-    const rollResult = evalDiceRoll(dice);
 
-    const chatData = {
-      user: game.user?._id,
-      speaker: ChatMessage.getSpeaker({ actor }),
-      type: CONST.CHAT_MESSAGE_TYPES.ROLL,
-      sound: CONFIG.sounds.dice,
-      roll: roll,
-      rollMode: game.settings.get("core", "rollMode"),
-      content: await renderTemplate(template, rollResult),
-
-      flags: {
-        templateVariables: rollResult,
-      },
-    };
-
-    await ChatMessage.create(chatData);
+    await chatDiceRoll(rollString.split("d")[0], [], 0, this.actor);
   }
 }

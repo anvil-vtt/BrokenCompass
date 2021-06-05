@@ -77,7 +77,11 @@
       "Chat": {
         "Roll": "Roll",
         "RestDice": "Remaining dice",
-        "Successes": "Successes"
+        "Successes": "Successes",
+        "IHaveExpertise": "I have expertise",
+        "ReRoll": "Take a risk",
+        "EqualDice": "Equal dice",
+        "AllIn": "All in"
       }
     }
   }
