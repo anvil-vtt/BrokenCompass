@@ -24,3 +24,4 @@ jobs:
         with:
           prettier: true
           eslint: true
+          stylelint: true
