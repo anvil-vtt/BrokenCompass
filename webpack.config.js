@@ -16,12 +16,28 @@ module.exports = (env) => {
     output: {
       filename: "system.js",
       path: path.resolve(__dirname, "dist"),
+      publicPath: "/systems/brokencompass/",
+    },
+    devServer: {
+      hot: true,
+      proxy: [
+        {
+          context: (pathname, req) => {
+            return !pathname.match("^/ws");
+          },
+          target: "http://localhost:30000",
+          ws: true,
+        },
+      ],
     },
     module: {
       rules: [
         {
           test: /\.js$/,
           loader: "prettier-loader",
+          options: {
+            parser: "babel",
+          },
           exclude: /node_modules/,
         },
         {
