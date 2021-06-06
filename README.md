@@ -9,41 +9,60 @@
 
 This is the **Broken Compass system** for FoundryVTT. 
 
+
 ## Installation
 **Manifest URL**: https://github.com/anvil-vtt/BrokenCompass/releases/latest/download/system.json
 
 For manual installation, use the provided manifest URL in the "*Install System*" popup window while managing game systems.
 
-## Dev Setup
 
-### NodeJS-Server aufsetzen
+## Developer setup
 
-#### MAC/Linux
-- download des Linux-Bundle
-- an gewünschten Ort entpacken ```z.B. ~/foundryVTT/```
-- Datenordner anlegen z. B. ```~/foundryVTT/data/fvtt08/foundrydata```  
-- in den entpackten Ordner wechseln z. B. ```cd foundryvtt-0.8.5```  
-- Nodeserver starten ```node resources/app/main.js --dataPath=$HOME/foundryVTT/data/fvtt08/foundrydata --port=30008```
+### Important console commands
 
-#### WIN
-- download node.js als Setup für Windows und installieren
-- download des Linux-Bundle von FoundryVTT
-- am gewünschten Ort entpacken z.B.  ```d:\foundry8\foundryVTT```
-- Datenordner anlegen z. B. ```d:\foundry8\foundrydata```  
-- in der Konsole Nodeserver starten z.B. ```c:\Program Files\nodejs\node.exe d:\foundry8\foundryvtt\resources\app\main.js --dataPath=d:\foundry8\foundrydata```
+| Command | Description |
+|---------|-------------|
+|`npm install`|Install/Update node modules after new dependencies were added by other developers|
+|`npm install --save-dev <package-name>`| Installs a new node module and saves it as a dev-dependency (inside package.json)|
+|`npm run build`|Builds the project and puts everything inside `dist`|
+|`npm run watch`|Same as `npm run build` but watches for changes and rebuilds automatically|
+|`npm run start`|Starts the webpack dev-server on port `8080` which allows developers to use HMR|
+|`npm run prettier`|Checks if every file is formatted in the right way|
+|`npm run prettier:fix`|Automatically fixes the code style for most files inside the project|
 
-### Projekt linken
+### Install Node.js version of FoundryVTT
 
-#### MAC/Linux
-- Das Repository im Ordner ```system``` (z. B. ```~/foundryVTT/data/fvtt08/foundrydata/Data/systems```) linken z. B. 
-  ```ln -s ~/foundryVTT/dev/BrokenCompass/system/ brokencompass```
-- ggf. muss der Nodeserver neu gestartet werden
+#### Linux / MacOS
+- Ensure that Node.js is installed (version requirement 14+)
+- Download the linux version of FoundryVTT
+- Extract the downloaded archive, e.g. to `~/foundryvtt/`
+- Create an empty data folder, e.g `~/foundryvttdata/`
+- Start FoundryVTT from your console via `node ~/foundryvtt/resources/app/main.js --dataPath=$HOME/foundryvttdata`
 
-#### WIN
-- das Repository in der Konsole (mit Adminrechten) im Ordner ```system``` linken 
-- z.B. ```mklink /d d:\nodejs\foundry8\foundrydata\Data\systems\brokencompass d:\dev\brokencompass\system```
-- ggf. muss der Nodeserver neu gestartet werden
+#### Windows
+- Ensure that Node.js is installed (version requirement 14+)
+- Download the linux version of FoundryVTT
+- Extract the downloaded archive, e.g. to `D:\foundryvtt\`
+- Create an empty data folder, e.g `D:\foundryvttdata\`
+- Start FoundryVTT from your console via `C:\Program Files\nodejs\node.exe D:\foundryvtt\resources\app\main.js --dataPath=D:\foundryvttdata\`
 
+### Installing the system for development
+
+- Request write access to the repository or fork the project
+- Clone the repository, e.g. via console `git clone git@github.com:anvil-vtt/BrokenCompass.git ~/BrokenCompass`
+
+### Link the new system to your FoundryVTT data folder
+
+#### Linux / MacOS
+  - `cd ~/foundryvttdata/Data/systems`
+  - When using build/watch: `ln -s ~/BrokenCompass/dist/ brokencompass`
+  - When using the webpack devserver: `ln -s ~/BrokenCompass/system/ brokencompass`
+  
+#### Windows
+  - `cd D:\foundryvttdata\Data\systems`
+  - When using build/watch: `mklink /d D:\foundryvttdata\Data\systems\brokencompass D:\BrokenCompass\dist`
+  - When using the webpack devserver: `mklink /d D:\foundryvttdata\Data\systems\brokencompass D:\BrokenCompass\system`
+  
 
 ## License
 
