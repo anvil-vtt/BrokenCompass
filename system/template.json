@@ -3,7 +3,18 @@
     "types": ["character"],
     "templates": {},
     "character": {
-      "heritage": ""
+      "callme": {
+        "value": ""
+      },
+      "heritage": {
+        "value": ""
+      },
+      "homeland": {
+        "value": ""
+      },
+      "workplace": {
+        "value": ""
+      }
     }
   },
   "Item": {
