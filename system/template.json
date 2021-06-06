@@ -55,10 +55,10 @@
         "embarrassed": false,
         "broken": false,
         "scared": false,
-        "free_1": false,
-        "free_2": false,
-        "free_3": false,
-        "free_4": false
+        "feeling_1": false,
+        "feeling_2": false,
+        "feeling_3": false,
+        "feeling_4": false
       },
       "expertise": {
         "expertise_1": "",
