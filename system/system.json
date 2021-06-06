@@ -2,7 +2,7 @@
   "name": "brokencompass",
   "title": "Broken Compass",
   "description": "The basic Broken Compass system for FoundryVTT",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "Patrick Bauer (Daddi#2333)",
   "scripts": ["system.js"],
   "styles": [],
