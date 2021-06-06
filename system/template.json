@@ -3,18 +3,34 @@
     "types": ["character"],
     "templates": {},
     "character": {
-      "callme": {
-        "value": ""
-      },
-      "heritage": {
-        "value": ""
-      },
-      "homeland": {
-        "value": ""
-      },
-      "workplace": {
-        "value": ""
-      }
+      "callme": "",
+      "heritage": "",
+      "homeland": "",
+      "workplace": "",
+      "action": "",
+      "guts": "",
+      "knowledge": "",
+      "society": "",
+      "wild": "",
+      "crime": "",
+      "fight": "",
+      "leadership": "",
+      "stunt": "",
+      "cool": "",
+      "drive": "",
+      "shoot": "",
+      "culture": "",
+      "firstAid": "",
+      "tech": "",
+      "charm": "",
+      "eloquence": "",
+      "observation": "",
+      "scout": "",
+      "survival": "",
+      "tough": "",
+      "alert": "",
+      "dexterity": "",
+      "stealth": ""
     }
   },
   "Item": {

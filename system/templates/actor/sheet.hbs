@@ -1,11 +1,12 @@
 {{log this}}
 <form autocomplete="off" class="{{cssClass}}">
-  <div class="actor-flex-spalten">
+  <!--  header-->
+  <div class="bc-actorsheet-div-column">
     <div>{{localize "BC.Sheet.Descriptions.Name"}}</div>
     <div><input name="name" type="text" value="{{actor.data.name}}" /></div>
   </div>
 
-  <div class="actor-flex-spalten">
+  <div class="bc-actorsheet-div-column">
     <div>{{localize "BC.Sheet.Descriptions.Callme"}}</div>
     <div><input name="data.callme" type="text" value="{{actor.data.data.callme}}" /></div>
     <div>{{localize "BC.Sheet.Descriptions.Needme"}}</div>
@@ -13,17 +14,127 @@
 
   <div>
     <div>{{localize "BC.Sheet.Descriptions.Feelathome"}}</div>
-    <div class="actor-flex-spalten">
+    <div class="bc-actorsheet-div-column">
       <div>{{localize "BC.Sheet.Descriptions.Heritage"}}</div>
       <div><input name="data.heritage" type="text" value="{{actor.data.data.heritage}}" /></div>
     </div>
-    <div class="actor-flex-spalten">
+    <div class="bc-actorsheet-div-column">
       <div>{{localize "BC.Sheet.Descriptions.Homeland"}}</div>
       <div><input name="data.homeland" type="text" value="{{actor.data.data.homeland}}" /></div>
     </div>
-    <div class="actor-flex-spalten">
+    <div class="bc-actorsheet-div-column">
       <div>{{localize "BC.Sheet.Descriptions.Workplace"}}</div>
       <div><input name="data.workplace" type="text" value="{{actor.data.data.workplace}}" /></div>
+    </div>
+
+    <!--  fields and skills-->
+    <hr>
+    <div class="bc-actorsheet-div-column">
+      <div>{{localize "BC.Sheet.Fields.Action"}}</div>
+      <div><input name="data.action" type="text" value="{{actor.data.data.action}}" /></div>
+    </div>
+    <div class="bc-actorsheet-div-column">
+      <div>{{localize "BC.Sheet.Skills.Fight"}}</div>
+      <div><input name="data.fight" type="text" value="{{actor.data.data.fight}}" /></div>
+    </div>
+    <div class="bc-actorsheet-div-column">
+      <div>{{localize "BC.Sheet.Skills.Leadership"}}</div>
+      <div><input name="data.leadership" type="text" value="{{actor.data.data.leadership}}" /></div>
+    </div>
+    <div class="bc-actorsheet-div-column">
+      <div>{{localize "BC.Sheet.Skills.Stunt"}}</div>
+      <div><input name="data.stunt" type="text" value="{{actor.data.data.stunt}}" /></div>
+    </div>
+
+    <hr>
+    <div class="bc-actorsheet-div-column">
+      <div>{{localize "BC.Sheet.Fields.Guts"}}</div>
+      <div><input name="data.guts" type="text" value="{{actor.data.data.guts}}" /></div>
+    </div>
+    <div class="bc-actorsheet-div-column">
+      <div>{{localize "BC.Sheet.Skills.Cool"}}</div>
+      <div><input name="data.cool" type="text" value="{{actor.data.data.cool}}" /></div>
+    </div>
+    <div class="bc-actorsheet-div-column">
+      <div>{{localize "BC.Sheet.Skills.Drive"}}</div>
+      <div><input name="data.drive" type="text" value="{{actor.data.data.drive}}" /></div>
+    </div>
+    <div class="bc-actorsheet-div-column">
+      <div>{{localize "BC.Sheet.Skills.Shoot"}}</div>
+      <div><input name="data.shoot" type="text" value="{{actor.data.data.shoot}}" /></div>
+    </div>
+
+    <hr>
+    <div class="bc-actorsheet-div-column">
+      <div>{{localize "BC.Sheet.Fields.Knowledge"}}</div>
+      <div><input name="data.knowledge" type="text" value="{{actor.data.data.knowledge}}" /></div>
+    </div>
+    <div class="bc-actorsheet-div-column">
+      <div>{{localize "BC.Sheet.Skills.Culture"}}</div>
+      <div><input name="data.culture" type="text" value="{{actor.data.data.culture}}" /></div>
+    </div>
+    <div class="bc-actorsheet-div-column">
+      <div>{{localize "BC.Sheet.Skills.FirstAid"}}</div>
+      <div><input name="data.firstAid" type="text" value="{{actor.data.data.firstAid}}" /></div>
+    </div>
+    <div class="bc-actorsheet-div-column">
+      <div>{{localize "BC.Sheet.Skills.Tech"}}</div>
+      <div><input name="data.tech" type="text" value="{{actor.data.data.tech}}" /></div>
+    </div>
+
+    <hr>
+    <div class="bc-actorsheet-div-column">
+      <div>{{localize "BC.Sheet.Fields.Society"}}</div>
+      <div><input name="data.society" type="text" value="{{actor.data.data.society}}" /></div>
+    </div>
+    <div class="bc-actorsheet-div-column">
+      <div>{{localize "BC.Sheet.Skills.Charm"}}</div>
+      <div><input name="data.charm" type="text" value="{{actor.data.data.charm}}" /></div>
+    </div>
+    <div class="bc-actorsheet-div-column">
+      <div>{{localize "BC.Sheet.Skills.Eloquence"}}</div>
+      <div><input name="data.eloquence" type="text" value="{{actor.data.data.eloquence}}" /></div>
+    </div>
+    <div class="bc-actorsheet-div-column">
+      <div>{{localize "BC.Sheet.Skills.Observation"}}</div>
+      <div><input name="data.observation" type="text" value="{{actor.data.data.observation}}" /></div>
+    </div>
+
+    <hr>
+    <div class="bc-actorsheet-div-column">
+      <div>{{localize "BC.Sheet.Fields.Wild"}}</div>
+      <div><input name="data.wild" type="text" value="{{actor.data.data.wild}}" /></div>
+    </div>
+    <div class="bc-actorsheet-div-column">
+      <div>{{localize "BC.Sheet.Skills.Scout"}}</div>
+      <div><input name="data.scout" type="text" value="{{actor.data.data.scout}}" /></div>
+    </div>
+    <div class="bc-actorsheet-div-column">
+      <div>{{localize "BC.Sheet.Skills.Survival"}}</div>
+      <div><input name="data.survival" type="text" value="{{actor.data.data.survival}}" /></div>
+    </div>
+    <div class="bc-actorsheet-div-column">
+      <div>{{localize "BC.Sheet.Skills.Tough"}}</div>
+      <div><input name="data.tough" type="text" value="{{actor.data.data.tough}}" /></div>
+    </div>
+
+    <hr>
+    <hr>
+    <div class="bc-actorsheet-div-column">
+      <div>{{localize "BC.Sheet.Fields.Crime"}}</div>
+      <div><input name="data.crime" type="text" value="{{actor.data.data.crime}}" /></div>
+    </div>
+    <div class="bc-actorsheet-div-column">
+      <div>{{localize "BC.Sheet.Skills.Alert"}}</div>
+      <div><input name="data.alert" type="text" value="{{actor.data.data.alert}}" /></div>
+    </div>
+    <div class="bc-actorsheet-div-column">
+      <div>{{localize "BC.Sheet.Skills.Dexterity"}}</div>
+      <div><input name="data.dexterity" type="text" value="{{actor.data.data.dexterity}}" /></div>
+    </div>
+    <div class="bc-actorsheet-div-column">
+      <div>{{localize "BC.Sheet.Skills.Stealth"}}</div>
+      <div><input name="data.stealth" type="text" value="{{actor.data.data.stealth}}" /></div>
     </div>
   </div>
 
