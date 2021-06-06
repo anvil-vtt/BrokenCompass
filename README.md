@@ -9,10 +9,12 @@
 
 This is the **Broken Compass system** for FoundryVTT. 
 
+
 ## Installation
 **Manifest URL**: https://github.com/anvil-vtt/BrokenCompass/releases/latest/download/system.json
 
 For manual installation, use the provided manifest URL in the "*Install System*" popup window while managing game systems.
+
 
 ## Developer setup
 
@@ -20,11 +22,11 @@ For manual installation, use the provided manifest URL in the "*Install System*"
 
 | Command | Description |
 |---------|-------------|
-|`npm install`|Install new NPM dependencies after new dependencies were added by other developers|
-|`npm install --save-dev <package-name>`| Installs a new npm package and saves it as a dev-dependency (inside package.json)|
+|`npm install`|Install/Update node modules after new dependencies were added by other developers|
+|`npm install --save-dev <package-name>`| Installs a new node module and saves it as a dev-dependency (inside package.json)|
 |`npm run build`|Builds the project and puts everything inside `dist`|
-|`npm run watch`|Same as `build` but watches for changes and rebuilds automatically|
-|`npm run start`|Starts the webpack dev-server which allows the developer to use HMR|
+|`npm run watch`|Same as `npm run build` but watches for changes and rebuilds automatically|
+|`npm run start`|Starts the webpack dev-server on port `8080` which allows developers to use HMR|
 |`npm run prettier`|Checks if every file is formatted in the right way|
 |`npm run prettier:fix`|Automatically fixes the code style for most files inside the project|
 
