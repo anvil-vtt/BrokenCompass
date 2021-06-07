@@ -1,0 +1,25 @@
+{{#*inline "valueIndicator"}}
+  <div class="bc-value-indicator bc-value-indicator--{{value}}" data-path="{{path}}">
+    <span data-value="1"></span>
+    <span data-value="2"></span>
+    <span data-value="3"></span>
+  </div>
+{{/inline}}
+
+<section class="bc-actorsheet-field">
+  <div class="bc-actorsheet-div-column">
+    <span><strong>{{field.label}}</strong></span>
+    <div>{{> valueIndicator path=field.path value=field.value}}</div>
+  </div>
+
+  <section class="bc-actorsheet-skills">
+    {{#each field.skills}}
+      <div class="bc-actorsheet-div-column">
+        <span>{{this.label}}</span>
+       {{> valueIndicator path=this.path value=this.value}}
+      </div>
+    {{/each}}
+  </section>
+</section>
+
+<hr>

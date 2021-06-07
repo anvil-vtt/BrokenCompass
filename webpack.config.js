@@ -10,6 +10,7 @@ module.exports = (env) => {
   const config = {
     entry: "./src/brokencompass.js",
     mode: "production",
+    devtool: "inline-source-map",
     resolve: {
       extensions: [".js", ".json"],
     },
