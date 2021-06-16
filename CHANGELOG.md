@@ -5,7 +5,6 @@
 - Added most static fields to the Actor template
 - Removed re-roll buttons for users that are not allowed to push them
 
-
 ### 0.0.3
 
 - Added SASS support and stylelint
