@@ -1,23 +1,40 @@
-{{log this}}
 <form autocomplete="off" class="{{cssClass}}">
-  <input name="name" type="text" value="{{actor.data.name}}" />
+  <!--  header-->
+  <div class="bc-actorsheet-div-column">
+    <div>{{localize "BC.Sheet.Descriptions.Name"}}</div>
+    <div><input name="name" type="text" value="{{actor.data.name}}" /></div>
+  </div>
 
-  <label for="data.heritage">{{localize "BC.Sheet.Descriptions.Heritage"}}</label>
-  <input name="data.heritage" type="text" value="{{actor.data.data.heritage}}" />
+  <div class="bc-actorsheet-div-column">
+    <div>{{localize "BC.Sheet.Descriptions.Callme"}}</div>
+    <div><input name="data.callme" type="text" value="{{actor.data.data.callme}}" /></div>
+    <div>{{localize "BC.Sheet.Descriptions.Needme"}}</div>
+  </div>
 
-  Name = {{actor.data.name}}
-
-  {{#each fields}}
-    <div>
-      {{this.name}}
-      <div>
-        <span>Skills:</span>
-        {{#each this.skills}}
-           {{this.name}} - <span data-roll="{{this.value}}d6">{{this.value}}</span>
-        {{/each}}
-      </div>
+  <div>
+    <div>{{localize "BC.Sheet.Descriptions.Feelathome"}}</div>
+    <div class="bc-actorsheet-div-column">
+      <div>{{localize "BC.Sheet.Descriptions.Heritage"}}</div>
+      <div><input name="data.heritage" type="text" value="{{actor.data.data.heritage}}" /></div>
     </div>
-  {{/each}}
+    <div class="bc-actorsheet-div-column">
+      <div>{{localize "BC.Sheet.Descriptions.Homeland"}}</div>
+      <div><input name="data.homeland" type="text" value="{{actor.data.data.homeland}}" /></div>
+    </div>
+    <div class="bc-actorsheet-div-column">
+      <div>{{localize "BC.Sheet.Descriptions.Workplace"}}</div>
+      <div><input name="data.workplace" type="text" value="{{actor.data.data.workplace}}" /></div>
+    </div>
+  </div>
+
+  <hr>
+
+  <!--  fields and skills-->
+  <div>
+    {{#each fields as |field|}}
+      {{> "systems/brokencompass/templates/actor/partials/fields.hbs" field = field}}
+    {{/each}}
+  </div>
 
   {{> "systems/brokencompass/templates/actor/dice-tray.hbs"}}
 

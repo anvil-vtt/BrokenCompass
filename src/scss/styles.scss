@@ -1,0 +1,36 @@
+.bc-actorsheet-div-column {
+  display: flex;
+}
+
+.bc-actorsheet-div-column > :first-child {
+  min-width: 12rem;
+}
+
+.bc-value-indicator {
+  span {
+    background: #fff;
+    border: 3px solid #000;
+    cursor: pointer;
+    display: inline-block;
+    height: 1.5rem;
+    width: 1rem;
+  }
+
+  &.bc-value-indicator--1 {
+    span:nth-child(1) {
+      background: #000;
+    }
+  }
+
+  &.bc-value-indicator--2 {
+    span:nth-child(-n + 2) {
+      background: #000;
+    }
+  }
+
+  &.bc-value-indicator--3 {
+    span:nth-child(-n + 3) {
+      background: #000;
+    }
+  }
+}

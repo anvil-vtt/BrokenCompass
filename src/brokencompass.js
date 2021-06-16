@@ -31,6 +31,9 @@ Hooks.once("init", async () => {
 // Hooks.on("renderChatMessage", (app, html, data) => {});
 
 async function preloadHandlebarsTemplates() {
-  const templatesPath = ["systems/brokencompass/templates/actor/dice-tray.hbs"];
+  const templatesPath = [
+    "systems/brokencompass/templates/actor/dice-tray.hbs",
+    "systems/brokencompass/templates/actor/partials/fields.hbs",
+  ];
   return loadTemplates(templatesPath);
 }
