@@ -1,9 +1,24 @@
+@font-face {
+  font-family: "barbariregular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/systems/brokencompass/assets/fonts/barbari-webfont.woff2") format("woff2"),
+    url("/systems/brokencompass/assets/fonts/barbari-webfont.woff") format("woff");
+}
+
 .bc-actorsheet-div-column {
   display: flex;
 }
 
 .bc-actorsheet-div-column > :first-child {
   min-width: 12rem;
+}
+
+.bc-actorsheet-field {
+  strong {
+    font-family: "barbariregular", sans-serif;
+    text-transform: uppercase;
+  }
 }
 
 .bc-value-indicator {

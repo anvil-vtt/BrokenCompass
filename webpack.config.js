@@ -63,7 +63,9 @@ module.exports = (env) => {
       ],
     },
     plugins: [
-      new StylelintPlugin(),
+      new StylelintPlugin({
+        fix: true,
+      }),
       new CleanWebpackPlugin(),
       new CopyPlugin({
         patterns: [{ from: "system" }],
