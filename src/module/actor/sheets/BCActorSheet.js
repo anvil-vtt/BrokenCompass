@@ -12,7 +12,7 @@ export class BCActorSheet extends ActorSheet {
     super.activateListeners(html);
 
     html.on("click", "[data-roll]", this._rollTheDice.bind(this));
-    html.on("click", ".bc-value-indicator span", this._onChangeValue.bind(this));
+    html.on("click", ".bs__value-indicator span", this._onChangeValue.bind(this));
   }
 
   getData(options) {
