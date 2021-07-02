@@ -1,0 +1,88 @@
+{
+  "BC": {
+    "name": "BrokenCompass",
+    "Sheet": {
+      "Descriptions": {
+        "Name": "Il mio nome è",
+        "Callme": "Chiamami se ti serve un/a",
+        "Needme": " ",
+        "Feelathome": "Qui mi sento a casa",
+        "Heritage": "Origine",
+        "Homeland": "Patria",
+        "Workplace": "LAvoro",
+        "Luck": "Fortuna",
+        "Word": "Il mio motto",
+        "Feelings": "Mi sento",
+        "Expertise": "Specialità",
+        "Weapons": "Armi & Equipaggiamento",
+        "Scars": "Esperienze & Cicactrici",
+        "Pockets": "Tasche",
+        "Backpack": "Zaino",
+        "Bag": "Borsa",
+        "Mags": "Caricatori"
+      },
+      "Fields": {
+        "Action": "Azione",
+        "Guts": "Fegato",
+        "Knowledge": "Conoscenza",
+        "Society": "Società",
+        "Wild": "Selvaggio",
+        "Crime": "Crimine"
+      },
+      "Skills": {
+        "Fight": "Combattere",
+        "Leadership": "Leadership",
+        "Stunt": "Stunt",
+        "Cool": "Sangue Freddo",
+        "Drive": "Guidare",
+        "Shoot": "Sparare",
+        "Culture": "Cultura",
+        "FirstAid": "Primo Soccorso",
+        "Tech": "Tecnologia",
+        "Charm": "Fascino",
+        "Eloquence": "Eloquenza",
+        "Observation": "Spirito d'Osservazione",
+        "Scout": "Esplorazione",
+        "Survival": "Sopravvivenza",
+        "Tough": "Tempra",
+        "Alert": "Allerta",
+        "Dexterity": "Destrezza",
+        "Stealth": "Furtività"
+      },
+      "Feelings": {
+        "Powerful": "Invincibile",
+        "Bleeding": "Sanguinante",
+        "Daring": "Gasato",
+        "Shocked": "Shockato",
+        "Focused": "Concentrato",
+        "Dizzy": "Frastornato",
+        "Confident": "Sicuro di me",
+        "Embarrassed": "Umiliato",
+        "Fierce": "Un Duro",
+        "Broken": "Spezzato",
+        "Untouchable": "Intoccabile",
+        "Scared": "Spaventato",
+        "Young": "Giovane",
+        "Old": "Vecchio",
+        "Hurt": "Ferito",
+        "Wreck": "Un rottame"
+      },
+      "Successes": {
+        "Basic": "Base",
+        "Critical": "Criticp",
+        "Extreme": "Estremo",
+        "Impossible": "Impossibile"
+      },
+      "RollTheDice": "Tira i dadi",
+      "Chat": {
+        "Roll": "Tiro",
+        "RestDice": "Dadi rimanenti",
+        "Successes": "Successi",
+        "IHaveExpertise": "Ho una Specialità",
+        "ReRoll": "Rischio",
+        "EqualDice": "Dadi uguali",
+        "AllIn": "Rischia tutto"
+      }
+    }
+  }
+}
