@@ -1,0 +1,18 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2021 by original authors @ fontello.com</metadata>
+<defs>
+<font id="brokencompass" horiz-adv-x="1000" >
+<font-face font-family="brokencompass" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="diamond_black_down" unicode="&#xe800;" d="M436 847c-4-1-102-64-218-139-156-102-211-139-214-144-5-8-5-22-1-30 9-17 415-669 420-675 12-12 33-12 44 0 3 4 96 158 206 343 216 364 204 343 196 360-1 4-6 9-9 11-35 26-402 274-407 275-8 3-7 3-17-1z" horiz-adv-x="873" />
+
+<glyph glyph-name="diamond_black_up" unicode="&#xe801;" d="M436-147c-4 1-102 64-218 139-156 102-211 139-214 144-5 8-5 22-1 30 9 17 415 669 420 675 12 12 33 12 44 0 3-4 96-158 206-343 216-364 204-343 196-360-1-3-6-8-9-11-35-26-402-274-407-275-8-3-7-3-17 1z" horiz-adv-x="873" />
+
+<glyph glyph-name="diamond_white_down" unicode="&#xe802;" d="M420-149c-4 1-10 4-13 7-5 5-392 653-404 676-5 10-4 22 2 31 3 5 65 48 204 143 109 75 202 137 206 139 9 4 18 4 27 0 15-8 416-271 423-277 7-7 8-8 8-21v-13l-209-336c-115-184-210-337-212-339-7-9-21-13-32-10z m198 395c145 234 181 292 178 294-6 7-366 240-369 239-4-1-352-239-352-240 0-2 340-575 351-592l3-5 4 6c2 3 85 137 185 298z" horiz-adv-x="873" />
+
+<glyph glyph-name="diamond_white_up" unicode="&#xe803;" d="M420 849c-4-1-10-4-13-7-5-5-392-653-404-676-5-10-4-22 2-31 3-5 65-48 204-143 109-75 202-137 206-139 9-4 18-4 27 0 15 8 416 271 423 277 7 7 8 9 8 21v13l-209 336c-115 184-210 337-212 339-7 9-21 13-32 10z m198-395c145-234 181-292 178-294-6-7-366-240-369-239-4 1-352 239-352 241 0 1 340 574 351 591l3 5 4-6c2-3 85-137 185-298z" horiz-adv-x="873" />
+</font>
+</defs>
+</svg>
