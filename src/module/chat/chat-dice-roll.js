@@ -29,7 +29,7 @@ export async function chatDiceRoll(diceAmount, keepPairs, rollCount, actor, expe
     ...rollResult,
     rollCount: rollCount + 1,
     actor: actor,
-    usExpertise: rollResult.restDice.length && rollCount === 0,
+    useExpertise: rollResult.restDice.length && rollCount === 0,
     takeARisk: rollResult.restDice.length && rollCount === 0 && rollResult.hasGenerateSuccess,
     allIn: rollResult.restDice.length && rollCount === 1 && rollResult.hasGenerateSuccess,
   };
