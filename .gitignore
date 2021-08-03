@@ -2,3 +2,4 @@
 dist
 node_modules
 foundry.js
+.DS_Store

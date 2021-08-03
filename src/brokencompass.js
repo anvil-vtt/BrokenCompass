@@ -37,3 +37,11 @@ async function preloadHandlebarsTemplates() {
   ];
   return loadTemplates(templatesPath);
 }
+
+Handlebars.registerHelper("greaterThan", function (v1, v2, options) {
+  "use strict";
+  if (v1 > v2) {
+    return options.fn(this);
+  }
+  return options.inverse(this);
+});
