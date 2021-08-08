@@ -1,6 +1,8 @@
 {
   "Actor": {
-    "types": ["character"],
+    "types": [
+      "character"
+    ],
     "templates": {},
     "character": {
       "id": {
@@ -12,7 +14,8 @@
       },
       "luck": {
         "points": 0,
-        "coins": 0
+        "maxPoints": 10,
+        "coins": 1
       },
       "fields": {
         "action": 2,
@@ -75,6 +78,67 @@
         "scars_4": "",
         "scars_5": "",
         "scars_6": ""
+      },
+      "weapons": {
+        "weapon_1": {
+          "name": "",
+          "description": ""
+        },
+        "weapon_2": {
+          "name": "",
+          "description": ""
+        },
+        "weapon_3": {
+          "name": "",
+          "description": ""
+        },
+        "weapon_4": {
+          "name": "",
+          "description": ""
+        },
+        "weapon_5": {
+          "name": "",
+          "description": ""
+        }
+      },
+      "pockets": {
+        "pocket_1": "",
+        "pocket_2": "",
+        "pocket_3": "",
+        "pocket_4": ""
+      },
+      "bag": {
+        "bag_1": "",
+        "bag_2": "",
+        "bag_3": "",
+        "bag_4": ""
+      },
+      "backpack": {
+        "backpack_1": "",
+        "backpack_2": "",
+        "backpack_3": "",
+        "backpack_4": "",
+        "backpack_5": ""
+      },
+      "mags": {
+        "mag_1": {
+          "type": "",
+          "pocket": "",
+          "bag": "",
+          "backpack": ""
+        },
+        "mag_2": {
+          "type": "",
+          "pocket": "",
+          "bag": "",
+          "backpack": ""
+        },
+        "mag_3": {
+          "type": "",
+          "pocket": "",
+          "bag": "",
+          "backpack": ""
+        }
       }
     }
   },

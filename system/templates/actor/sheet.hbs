@@ -1,41 +1,184 @@
-<form autocomplete="off" class="{{cssClass}}">
-  <!--  header-->
-  <div class="bs__ac-column">
-    <div>{{localize "BC.Sheet.Descriptions.Name"}}</div>
-    <div><input name="name" type="text" value="{{actor.data.name}}" /></div>
+<form autocomplete="off" class="{{cssClass}} bc__ac__body">
+
+  <div class="bc__ac__description">
+
+    <div class="bc__ac__row">
+      <span class="bc__ac__label">{{localize "BC.Sheet.Descriptions.Name"}}</span>
+      <input class="bc__ac__input" name="name" type="text" value="{{actor.data.name}}" />
+    </div>
+
+    <div class="bc__ac__row">
+      <span class="bc__ac__label">{{localize "BC.Sheet.Descriptions.Callme"}}</span>
+      <input name="data.callme" type="text" value="{{actor.data.data.callme}}" />
+    </div>
+
+    <div class="bc__ac__row">
+      <span class="bc__ac__label">{{localize "BC.Sheet.Descriptions.Feelathome"}}</span>
+      <div class="bc__ac__row">
+        <div>
+          <input name="data.heritage" type="text" value="{{actor.data.data.heritage}}" />
+          {{localize "BC.Sheet.Descriptions.Heritage"}}
+        </div>
+        <div>
+          <input name="data.homeland" type="text" value="{{actor.data.data.homeland}}" />
+          {{localize "BC.Sheet.Descriptions.Homeland"}}
+        </div>
+        <div>
+          <input name="data.workplace" type="text" value="{{actor.data.data.workplace}}" />
+          {{localize "BC.Sheet.Descriptions.Workplace"}}
+        </div>
+      </div>
+    </div>
+    <input name="data.wordsToLiveBy" type="text" value="{{actor.data.data.wordsToLiveBy}}" />
+    {{localize "BC.Sheet.Descriptions.Word"}}
   </div>
 
-  <div class="bs__ac-column">
-    <div>{{localize "BC.Sheet.Descriptions.Callme"}}</div>
-    <div><input name="data.callme" type="text" value="{{actor.data.data.callme}}" /></div>
-    <div>{{localize "BC.Sheet.Descriptions.Needme"}}</div>
+  <div class="bc__ac__portrait">
+    Das BIld
   </div>
 
-  <div>
-    <div>{{localize "BC.Sheet.Descriptions.Feelathome"}}</div>
-    <div class="bs__ac-column">
-      <div>{{localize "BC.Sheet.Descriptions.Heritage"}}</div>
-      <div><input name="data.heritage" type="text" value="{{actor.data.data.heritage}}" /></div>
-    </div>
-    <div class="bs__ac-column">
-      <div>{{localize "BC.Sheet.Descriptions.Homeland"}}</div>
-      <div><input name="data.homeland" type="text" value="{{actor.data.data.homeland}}" /></div>
-    </div>
-    <div class="bs__ac-column">
-      <div>{{localize "BC.Sheet.Descriptions.Workplace"}}</div>
-      <div><input name="data.workplace" type="text" value="{{actor.data.data.workplace}}" /></div>
-    </div>
-  </div>
-
-  <hr>
-
-  <!--  fields and skills-->
-  <div>
+  <div class="bc__ac__fields_and_skills">
     {{#each fields as |field|}}
       {{> "systems/brokencompass/templates/actor/partials/fields.hbs" field = field}}
     {{/each}}
   </div>
 
-  {{> "systems/brokencompass/templates/actor/dice-tray.hbs"}}
+  <section class="bc__ac__the_luck">
+    <h4 class="bc__ac__subheading">
+      {{localize "BC.Sheet.Descriptions.Luck"}}
+    </h4>
+    <div class="bc__ac__the_luck__row">
+      <div class="bc__ac__the_luck__count">
+        {{#each luck as |c|}}
+          <input type="checkbox" {{c.checked}} data-value="{{c.value}}">
+        {{/each}}
+      </div>
+      {{localize "BC.Sheet.Descriptions.MaxLuck"}}
+      <input class="bc__ac__the_luck__max_luck" name="data.luck.maxPoints" type="text"
+             value="{{actor.data.data.luck.maxPoints}}" />
+      <div class="bc__ac__the_luck__coin">
+        <input class="bc__ac__the_luck__luck_coins" name="data.luck.coins" type="text"
+               value="{{actor.data.data.luck.coins}}" />
+        {{localize "BC.Sheet.Descriptions.LuckCoin"}}
+      </div>
+    </div>
+  </section>
+
+  <section class="bc__ac__feelings">
+    <h4 class="bc__ac__subheading">
+      {{localize "BC.Sheet.Descriptions.Feelings"}}
+    </h4>
+    {{#each feelings as |feeling|}}
+      <div class="bc__ac__c_row">
+        <div class="bc__ac__i_feel__state">
+          +
+          {{#if feeling.good.value}}
+            <span class="icon-diamond_black_down" data-path="{{feeling.good.path}}" data-value="false"></span>
+          {{else}}
+            <span class="icon-diamond_white_down" data-path="{{feeling.good.path}}" data-value="true"></span>
+          {{/if}}
+          {{feeling.good.name}}
+        </div>
+        <div class="bc__ac__i_feel__field"> {{feeling.field}} </div>
+        <div class="bc__ac__i_feel__state">
+          {{feeling.bad.name}}
+          {{#if feeling.bad.value}}
+            <span class="icon-diamond_black_up" data-path="{{feeling.bad.path}}" data-value="false"></span>
+          {{else}}
+            <span class="icon-diamond_white_up" data-path="{{feeling.bad.path}}" data-value="true"></span>
+          {{/if}}
+          -
+        </div>
+      </div>
+    {{/each}}
+  </section>
+
+  <section class="bc__ac__expertise">
+    <h4 class="bc__ac__subheading">
+      {{localize "BC.Sheet.Descriptions.Expertise"}}
+    </h4>
+    {{#each data.data.expertise as |expert| }}
+      <input name="data.expertise.{{@key}}" type="text" value="{{expert}}" />
+    {{/each}}
+  </section>
+
+  <section class="bc__ac__scars_experience">
+    <h4 class="bc__ac__subheading">
+      {{localize "BC.Sheet.Descriptions.Scars"}}
+    </h4>
+    {{#each data.data.scars as |scar| }}
+      <input name="data.scars.{{@key}}" type="text" value="{{scar}}" />
+    {{/each}}
+  </section>
+
+  <section class="bc__ac__weapons_gear">
+    <h4 class="bc__ac__subheading">
+      {{localize "BC.Sheet.Descriptions.Weapons"}}
+    </h4>
+    {{#each data.data.weapons as |weapon| }}
+      <div class="bc__ac__weapons_gear__row">
+        <input class="bc__ac__weapons_gear__name" name="data.weapons.{{@key}}.name" type="text"
+               value="{{weapon.name}}" />
+        <input class="bc__ac__weapons_gear__description" name="data.weapons.{{@key}}.description" type="text"
+               value="{{weapon.description}}" />
+      </div>
+    {{/each}}
+  </section>
+
+  <section class="bc__ac__pockets">
+    <h4 class="bc__ac__subheading">
+      {{localize "BC.Sheet.Descriptions.Pockets"}}
+    </h4>
+    {{#each data.data.pockets as |slot| }}
+      <input name="data.pockets.{{@key}}" type="text" value="{{slot}}" />
+    {{/each}}
+  </section>
+
+  <section class="bc__ac__bag">
+    <h4 class="bc__ac__subheading">
+      {{localize "BC.Sheet.Descriptions.Bag"}}
+    </h4>
+    {{#each data.data.bag as |slot| }}
+      <input name="data.bag.{{@key}}" type="text" value="{{slot}}" />
+    {{/each}}
+  </section>
+
+  <section class="bc__ac__backpack">
+    <h4 class="bc__ac__subheading">
+      {{localize "BC.Sheet.Descriptions.Backpack"}}
+    </h4>
+    {{#each data.data.backpack as |slot| }}
+      <input name="data.backpack.{{@key}}" type="text" value="{{slot}}" />
+    {{/each}}
+  </section>
+
+  <section class="bc__ac__mags">
+    <h4 class="bc__ac__subheading">
+      {{localize "BC.Sheet.Descriptions.Mags"}}
+    </h4>
+    <div class="bc__ac__mags__row">
+      <span></span>
+      <span class="bc__ac__mags__label">Pocket</span>
+      <span class="bc__ac__mags__label">Bag</span>
+      <span class="bc__ac__mags__label">Backpack</span>
+    </div>
+    {{#each data.data.mags as |slot| }}
+      <div class="bc__ac__mags__row">
+        <input class="bc__ac__mags__name" name="data.mags.{{@key}}.type" type="text" value="{{slot.type}}" />
+        <input class="bc__ac__mags__pocket" name="data.mags.{{@key}}.pocket" type="text" value="{{slot.pocket}}" />
+        <input class="bc__ac__mags__bag" name="data.mags.{{@key}}.bag" type="text" value="{{slot.bag}}" />
+        <input class="bc__ac__mags__backpack" name="data.mags.{{@key}}.backpack" type="text"
+               value="{{slot.backpack}}" />
+      </div>
+    {{/each}}
+    <div class="bc__ac__mags__row">
+      <span></span>
+      <span class="bc__ac__mags__label">/2</span>
+      <span class="bc__ac__mags__label">/2</span>
+      <span class="bc__ac__mags__label">/9</span>
+    </div>
+  </section>
+
+  {{> "systems/brokencompass/templates/actor/partials/dice-tray.hbs"}}
 
 </form>

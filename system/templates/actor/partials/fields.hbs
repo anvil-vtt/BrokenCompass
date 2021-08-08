@@ -1,33 +1,30 @@
 {{#*inline "valueIndicator"}}
-  <div class="bs__value-indicator bs__value-indicator--{{value}}" data-path="{{path}}">
+  <div class="bc__ac__value-indicator" data-path="{{path}}">
     <span class="icon-diamond_black_down" data-value="1"></span>
     {{#greaterThan value 1}}
-        <span class="icon-diamond_black_up" data-value="2"></span>
+      <span class="icon-diamond_black_up" data-value="2"></span>
     {{else}}
-        <span class="icon-diamond_white_up" data-value="2"></span>
+      <span class="icon-diamond_white_up" data-value="2"></span>
     {{/greaterThan}}
     {{#greaterThan value 2}}
-        <span class="icon-diamond_black_down" data-value="2"></span>
+      <span class="icon-diamond_black_down" data-value="2"></span>
     {{else}}
-        <span class="icon-diamond_white_down" data-value="3"></span>
-      {{/greaterThan}}
+      <span class="icon-diamond_white_down" data-value="3"></span>
+    {{/greaterThan}}
   </div>
 {{/inline}}
-      
-<section class="bc-actorsheet-field">
-  <div class="bs__ac-column">
-    <span><strong>{{field.label}}</strong></span>
-    <div>{{> valueIndicator path=field.path value=field.value}}</div>
-  </div>
 
-  <section class="bc-actorsheet-skills">
-    {{#each field.skills}}
-      <div class="bs__ac-column">
-        <span>{{this.label}}</span>
-        {{> valueIndicator path=this.path value=this.value}}
-      </div>
-    {{/each}}
-  </section>
+<div class="bc__ac-fields">
+  <strong>{{field.label}}</strong>
+  {{> valueIndicator path=field.path value=field.value}}
+</div>
+
+<section class="bc-actorsheet-skills">
+  {{#each field.skills}}
+    <div class="bc__ac-skills">
+      <span>{{this.label}}</span>
+      {{> valueIndicator path=this.path value=this.value}}
+    </div>
+  {{/each}}
 </section>
 
-<hr>

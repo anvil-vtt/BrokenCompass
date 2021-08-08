@@ -32,7 +32,7 @@ Hooks.once("init", async () => {
 
 async function preloadHandlebarsTemplates() {
   const templatesPath = [
-    "systems/brokencompass/templates/actor/dice-tray.hbs",
+    "systems/brokencompass/templates/actor/partials/dice-tray.hbs",
     "systems/brokencompass/templates/actor/partials/fields.hbs",
   ];
   return loadTemplates(templatesPath);
@@ -44,4 +44,10 @@ Handlebars.registerHelper("greaterThan", function (v1, v2, options) {
     return options.fn(this);
   }
   return options.inverse(this);
+});
+
+Handlebars.registerHelper("times", function (n, block) {
+  var accum = "";
+  for (var i = 0; i < n; ++i) accum += block.fn(i);
+  return accum;
 });

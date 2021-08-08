@@ -1,0 +1,33 @@
+.bc__ac__body {
+  display: grid;
+  grid-template-columns: 280px repeat(4, 1fr);
+  grid-template-rows:  auto;
+  grid-gap: 1rem;
+  width: 750px;
+
+  grid-template-areas:
+    'description description description portrait portrait'
+    'skills diceTray diceTray diceTray diceTray'
+    'skills luck luck luck luck'
+    'skills feelings feelings feelings feelings'
+    'skills expertise expertise scars scars'
+    'skills weapons weapons weapons weapons'
+    'skills pockets pockets bag bag'
+    'skills backpack backpack mags mags'
+    'skills . . . .';
+}
+
+.bc__ac__row {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.bc__ac__c_row {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+

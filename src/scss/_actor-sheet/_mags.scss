@@ -1,0 +1,30 @@
+.bc__ac__mags {
+  grid-area: mags;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.bc__ac__mags__row {
+  display: flex;
+  gap: 0.25rem;
+
+  span:first-child {
+    flex: 1 1 auto;
+  }
+}
+
+.bc__ac__mags__pocket,
+.bc__ac__mags__bag,
+.bc__ac__mags__backpack {
+  flex: 0 0 2rem;
+}
+
+.bc__ac__mags__label {
+  overflow: hidden;
+  font-size: 0.4rem;
+  color: #666666;
+  text-transform: uppercase;
+  flex: 0 0 2rem;
+  text-align: center;
+}

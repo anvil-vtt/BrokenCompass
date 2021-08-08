@@ -1,0 +1,29 @@
+.bc__ac__feelings {
+  grid-area: feelings;
+}
+
+.bc__ac__i_feel__state {
+  width: 7rem;
+
+  &:first-child {
+    text-align: right;
+  }
+
+  span {
+    cursor: pointer;
+
+    &::before {
+      margin: 0;
+    }
+  }
+}
+
+.bc__ac__i_feel__field {
+  width: 4.5rem;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #bbbbbb;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
