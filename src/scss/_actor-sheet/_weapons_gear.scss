@@ -1,0 +1,22 @@
+.bc__ac__weapons_gear {
+  grid-area: weapons;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.bc__ac__weapons_gear__row {
+  display: flex;
+  align-items: center;
+}
+
+.bc__ac__weapons_gear__name {
+  flex: 1 1 30%;
+}
+
+.bc__ac__weapons_gear__description,
+input[type="text"].bc__ac__weapons_gear__description {
+  flex: 2 1 70%;
+  font-size: 0.8em;
+  height: 20px
+}

@@ -11,6 +11,8 @@
         "Homeland": "Homeland",
         "Workplace": "Workplace",
         "Luck": "Luck",
+        "LuckCoin": "Luck Coin",
+        "MaxLuck": "max. Luck",
         "Word": "Words to live by",
         "Feelings": "I feel",
         "Expertise": "Expertise",
@@ -74,6 +76,7 @@
         "Impossible": "Impossible"
       },
       "RollTheDice": "Roll the dice",
+      "FlipTheCoin": "Flip the Coin",
       "Chat": {
         "Roll": "Roll",
         "RestDice": "Remaining dice",

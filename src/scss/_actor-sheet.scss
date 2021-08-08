@@ -1,36 +1,19 @@
-.bs__ac-column {
-  display: flex;
-}
+@import '_actor-sheet/layout';
+@import '_actor-sheet/typografie';
+@import '_actor-sheet/dice-tray';
+@import '_actor-sheet/form';
 
-.bs__ac-column > :first-child {
-  min-width: 12rem;
-}
+@import '_actor-sheet/backpack';
+@import '_actor-sheet/bag';
+@import '_actor-sheet/description';
+@import '_actor-sheet/portrait';
+@import '_actor-sheet/experience';
+@import '_actor-sheet/expertise';
+@import '_actor-sheet/feelings';
+@import '_actor-sheet/fields_and_skills';
+@import '_actor-sheet/luck';
+@import '_actor-sheet/mags';
+@import '_actor-sheet/pockets';
+@import '_actor-sheet/weapons_gear';
 
-.bs__value-indicator {
-  span {
-    //background: #fff;
-    //border: 3px solid #000;
-    cursor: pointer;
-    display: inline-block;
-    height: 1.5rem;
-    width: 1rem;
-  }
 
-  //&.bs__value-indicator--1 {
-  //span:nth-child(1) {
-  //background: #000;
-  //}
-  //}
-
-  //&.bs__value-indicator--2 {
-  //span:nth-child(-n + 2) {
-  //background: #000;
-  //}
-  //}
-
-  //&.bs__value-indicator--3 {
-  //span:nth-child(-n + 3) {
-  //background: #000;
-  //}
-  //}
-}

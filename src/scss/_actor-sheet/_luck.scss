@@ -1,0 +1,39 @@
+.bc__ac__the_luck {
+  grid-area: luck;
+}
+
+.bc__ac__the_luck__row {
+  display: flex;
+  align-items: center;
+}
+
+input[type="text"].bc__ac__the_luck__max_luck {
+  width: 1.5rem;
+  margin-left: 0.5rem;
+  margin-right: auto;
+}
+
+.bc__ac__the_luck__count {
+  margin-right: auto;
+  font-size: 0.8rem;
+
+  input[type="checkbox"] {
+    margin: 0;
+  }
+}
+
+.bc__ac__the_luck__coin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type="text"].bc__ac__the_luck__luck_coins {
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 2rem;
+  padding: 0;
+}

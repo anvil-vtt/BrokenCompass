@@ -1,0 +1,32 @@
+.bc__ac__value-indicator {
+  width: 4em;
+  display: flex;
+  margin: 0 0 0 0.5rem;
+
+  span {
+    width: 1em;
+    margin: 0 -0.1em;
+    padding: 0;
+    display: inline-block;
+
+    cursor: pointer;
+
+    &::before {
+      margin: 0;
+    }
+  }
+}
+
+.bc__ac__input {
+  flex: 1 1 auto;
+}
+
+input[type="text"] {
+  background: #ffffff;
+  border-radius: 0;
+}
+
+.bc__ac__label {
+  height: 26px;
+  line-height: 26px;
+}

@@ -1,0 +1,12 @@
+<div class="bc__ac__dice-tray">
+  <h4 class="bc__ac__subheading">{{localize "BC.Sheet.RollTheDice"}}</h4>
+  <div class="bc__ac__dice-tray__dice">
+    <button class="bc__ac__dice-tray__coin_flip">
+      {{localize "BC.Sheet.FlipTheCoin"}}
+    </button>
+    {{#each dice}}
+      <button data-roll="{{this}}d6">{{this}}</button>
+    {{/each}}
+  </div>
+</div>
+
