@@ -59,10 +59,15 @@ export class BCActorSheet extends ActorSheet {
 
     const target = $(e.currentTarget);
     const value = target.data("value");
-
-    this.actor.update({
-      ["data.luck.points"]: value,
-    });
+    if (Number(value) === 1 && this.actor.data.data.luck.points === 1) {
+      this.actor.update({
+        ["data.luck.points"]: 0,
+      });
+    } else {
+      this.actor.update({
+        ["data.luck.points"]: value,
+      });
+    }
   }
 
   async _onCoinFlip(e) {
