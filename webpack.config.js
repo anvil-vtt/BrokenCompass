@@ -12,12 +12,17 @@ module.exports = (env) => {
     mode: "production",
     devtool: "inline-source-map",
     resolve: {
-      extensions: [".js", ".json"]
+      extensions: [".js", ".json"],
     },
     output: {
       filename: "system.js",
       path: path.resolve(__dirname, "dist"),
-      publicPath: "/systems/brokencompass/"
+      publicPath: "/systems/brokencompass/",
+    },
+    performance: {
+      hints: false,
+      maxEntrypointSize: 512000,
+      maxAssetSize: 512000,
     },
     devServer: {
       hot: true,
@@ -27,9 +32,9 @@ module.exports = (env) => {
             return !pathname.match("^/ws");
           },
           target: "http://localhost:30000",
-          ws: true
-        }
-      ]
+          ws: true,
+        },
+      ],
     },
     module: {
       rules: [
@@ -37,9 +42,9 @@ module.exports = (env) => {
           test: /\.js$/,
           loader: "prettier-loader",
           options: {
-            parser: "babel"
+            parser: "babel",
           },
-          exclude: /node_modules/
+          exclude: /node_modules/,
         },
         {
           test: /\.scss$/,
@@ -49,27 +54,27 @@ module.exports = (env) => {
               loader: "css-loader",
               options: {
                 sourceMap: true,
-                url: false
-              }
+                url: false,
+              },
             },
             {
               loader: "sass-loader",
               options: {
-                sourceMap: true
-              }
-            }
-          ]
-        }
-      ]
+                sourceMap: true,
+              },
+            },
+          ],
+        },
+      ],
     },
     plugins: [
       // new StylelintPlugin(),
       new CleanWebpackPlugin(),
       new CopyPlugin({
-        patterns: [{ from: "system" }]
+        patterns: [{ from: "system" }],
       }),
-      new ESLintPlugin()
-    ]
+      new ESLintPlugin(),
+    ],
   };
 
   return config;

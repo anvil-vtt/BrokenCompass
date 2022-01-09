@@ -1,4 +1,8 @@
 .bc__ac__portrait {
   grid-area: portrait;
   background: #ffffff;
+
+  img {
+    vertical-align: bottom;
+  }
 }

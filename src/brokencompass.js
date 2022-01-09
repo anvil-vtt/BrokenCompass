@@ -19,7 +19,6 @@ Hooks.once("init", async () => {
 
   // Unregister Core sheets
   Actors.unregisterSheet("core", ActorSheet);
-  Items.unregisterSheet("core", ItemSheet);
 
   // Register BrokenCompass actor sheets
   Actors.registerSheet("brokencompass", BCActorSheet, {
