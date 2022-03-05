@@ -1,5 +1,8 @@
 # Changelog
 
+### 1.0.0
+- Released first version
+
 ### 0.0.4
 
 - Added most static fields to the Actor template
