@@ -1,5 +1,8 @@
 # Changelog
 
+### 1.0.1
+- Added italian language support
+
 ### 1.0.0
 - Released first version
 
