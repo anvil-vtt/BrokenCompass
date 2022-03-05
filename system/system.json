@@ -21,6 +21,11 @@
       "lang": "es",
       "name": "Spanish",
       "path": "languages/es.json"
+    },
+    {
+      "lang": "it",
+      "name": "Italian",
+      "path": "languages/it.json"
     }
   ],
   "minimumCoreVersion": "0.8.0",
