@@ -7,8 +7,11 @@
 <img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/anvil-vtt/BrokenCompass/BrokenCompass%20CI"> <img alt="GitHub" src="https://img.shields.io/github/license/anvil-vtt/BrokenCompass"> <a href="https://github.com/anvil-vtt/BrokenCompass/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/anvil-vtt/BrokenCompass"></a> <a href="https://github.com/anvil-vtt/BrokenCompass/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/anvil-vtt/BrokenCompass"></a> <a href="https://github.com/anvil-vtt/BrokenCompass/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/anvil-vtt/BrokenCompass"></a> 
 </p>
 
-This is the **Broken Compass system** for FoundryVTT. 
+This is the **Broken Compass system** for FoundryVTT based on the TTRPG from Two Little Mice.
+Take a look at the great work from Two Little Mice: https://twolittlemice.net/brokencompass/
 
+The BrokenCompass game system is not usable standalone. 
+This system does not contain any copyrighted content or rules. To play this game, get a copy of the core rulebook from the official [store](https://twolittlemice.net/store/).
 
 ## Installation
 **Manifest URL**: https://github.com/anvil-vtt/BrokenCompass/releases/latest/download/system.json
