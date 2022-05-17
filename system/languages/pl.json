@@ -1,0 +1,91 @@
+{
+  "BC": {
+    "name": "BrokenCompass",
+    "Sheet": {
+      "Descriptions": {
+        "Name": "Nazywam się",
+        "Callme": "Jestem",
+        "Needme": " ",
+        "Feelathome": "Pochodzę z",
+        "Heritage": "Miejsce urodzenia",
+        "Homeland": "Ojczyzna",
+        "Workplace": "Obecnie",
+        "Luck": "Szczęście",
+        "LuckCoin": "Moneta Losu",
+        "MaxLuck": "maks. Szczęście",
+        "Word": "Moje motto życiowe",
+        "Feelings": "Czuję się",
+        "Expertise": "Biegłości",
+        "Weapons": "Broń i Sprzęt",
+        "Scars": "Blizny i Doświadczenia",
+        "Pockets": "Kieszenie",
+        "Backpack": "Plecak",
+        "Bag": "Torba",
+        "Mags": "Magazynki"
+      },
+      "Fields": {
+        "Action": "Akcja",
+        "Guts": "Ikra",
+        "Knowledge": "Wiedza",
+        "Society": "Obycie",
+        "Wild": "Dzicz",
+        "Crime": "Występek"
+      },
+      "Skills": {
+        "Fight": "Bijatyka",
+        "Leadership": "Dowodzenie",
+        "Stunt": "Wyczyn",
+        "Cool": "Opanowanie",
+        "Drive": "Prowadzenie",
+        "Shoot": "Strzelanina",
+        "Culture": "Kultura",
+        "FirstAid": "Pierwsza Pomoc",
+        "Tech": "Technologia",
+        "Charm": "Urok",
+        "Eloquence": "Elokwencja",
+        "Observation": "Uwaność",
+        "Scout": "Rozpoznanie",
+        "Survival": "Przetrwanie",
+        "Tough": "Wytrzymałość",
+        "Alert": "Ostroność",
+        "Dexterity": "Zręczność",
+        "Stealth": "Skrytość"
+      },
+      "Feelings": {
+        "Powerful": "Potęny",
+        "Bleeding": "Kontuzjowany",
+        "Daring": "Zadziorny",
+        "Shocked": "Wstrząśnięty",
+        "Focused": "Skupiony",
+        "Dizzy": "Rozproszony",
+        "Confident": "Pewny",
+        "Embarrassed": "Zawstydzony",
+        "Fierce": "Niezwycięony",
+        "Broken": "Zmasakrowany",
+        "Untouchable": "Nietykalny",
+        "Scared": "Przerażony",
+        "Young": "Młody",
+        "Old": "Stary",
+        "Hurt": "",
+        "Wreck": "Wrak Człowieka"
+      },
+      "Successes": {
+        "Basic": "Podstawowy",
+        "Critical": "Krytyczny",
+        "Extreme": "Ekstremalny",
+        "Impossible": "Niemożliwy"
+      },
+      "RollTheDice": "Rzuć kośćmi",
+      "FlipTheCoin": "Rzuć monetą",
+      "Chat": {
+        "Roll": "Rzuć",
+        "RestDice": "Pozostałe kości",
+        "Successes": "Sukces",
+        "IHaveExpertise": "Mam biegłość",
+        "ReRoll": "Zaryzykuj",
+        "EqualDice": "Equal dice",
+        "AllIn": "Idź na całość!"
+      }
+    }
+  }
+}
