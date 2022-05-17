@@ -26,6 +26,11 @@
       "lang": "it",
       "name": "Italian",
       "path": "languages/it.json"
+    },
+    {
+      "lang": "pl",
+      "name": "Polish",
+      "path": "languages/pl.json"
     }
   ],
   "minimumCoreVersion": "0.8.0",
