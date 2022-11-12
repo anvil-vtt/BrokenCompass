@@ -1,0 +1,91 @@
+{
+  "BC": {
+    "name": "BrokenCompass",
+    "Sheet": {
+      "Descriptions": {
+        "Name": "Je suis",
+        "Callme": "Appelle si tu a besoin d'un",
+        "Needme": " ",
+        "Feelathome": "Là où...",
+        "Heritage": "j'ai grandi",
+        "Homeland": "je vis",
+        "Workplace": "je travail",
+        "Luck": "Chance",
+        "LuckCoin": "Pièce de chance",
+        "MaxLuck": "Chance max.",
+        "Word": "Mantra",
+        "Feelings": "Je me sens",
+        "Expertise": "Expertise",
+        "Weapons": "Armes & équipement",
+        "Scars": "Cicatrices & epxérience",
+        "Pockets": "Poches",
+        "Backpack": "Sac à dos",
+        "Bag": "Sac",
+        "Mags": "Chageurs"
+      },
+      "Fields": {
+        "Action": "Action",
+        "Guts": "Tripes",
+        "Knowledge": "Connaissances",
+        "Society": "En société",
+        "Wild": "Sauvage",
+        "Crime": "Crime"
+      },
+      "Skills": {
+        "Fight": "Combat",
+        "Leadership": "Meneur",
+        "Stunt": "Casacde",
+        "Cool": "Cool",
+        "Drive": "Consute",
+        "Shoot": "Tir",
+        "Culture": "Culture",
+        "FirstAid": "Premiers soins",
+        "Tech": "Tech",
+        "Charm": "Charme",
+        "Eloquence": "Eloquence",
+        "Observation": "Observation",
+        "Scout": "Trekking",
+        "Survival": "Survie",
+        "Tough": "Résistance",
+        "Alert": "Alerte",
+        "Dexterity": "Dexterité",
+        "Stealth": "Discrétion"
+      },
+      "Feelings": {
+        "Powerful": "Puissant",
+        "Bleeding": "Blessé",
+        "Daring": "Audacieux",
+        "Shocked": "Choqué",
+        "Focused": "Concentré",
+        "Dizzy": "Dispersé",
+        "Confident": "Confient",
+        "Embarrassed": "Embarrassé",
+        "Fierce": "Féroce",
+        "Broken": "Brisé",
+        "Untouchable": "Intouchable",
+        "Scared": "Apeuré",
+        "Young": "Jeune",
+        "Old": "Vieux",
+        "Hurt": "Hurt",
+        "Wreck": "A Wreck"
+      },
+      "Successes": {
+        "Basic": "Basique",
+        "Critical": "Critique",
+        "Extreme": "Extrême",
+        "Impossible": "Impossible"
+      },
+      "RollTheDice": "Lancer les dés",
+      "FlipTheCoin": "Lancer la pièce",
+      "Chat": {
+        "Roll": "Lancer",
+        "RestDice": "Dés restant",
+        "Successes": "Succès",
+        "IHaveExpertise": "Je sus expert",
+        "ReRoll": "Prendre un risque",
+        "EqualDice": "Dés égaux",
+        "AllIn": "quitte ou double"
+      }
+    }
+  }
+}
