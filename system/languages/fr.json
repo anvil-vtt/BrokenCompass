@@ -36,7 +36,7 @@
         "Leadership": "Meneur",
         "Stunt": "Casacde",
         "Cool": "Cool",
-        "Drive": "Consute",
+        "Drive": "Pilotage",
         "Shoot": "Tir",
         "Culture": "Culture",
         "FirstAid": "Premiers soins",
@@ -47,7 +47,7 @@
         "Scout": "Trekking",
         "Survival": "Survie",
         "Tough": "Résistance",
-        "Alert": "Alerte",
+        "Alert": "Vigilance",
         "Dexterity": "Dexterité",
         "Stealth": "Discrétion"
       },
@@ -66,8 +66,8 @@
         "Scared": "Apeuré",
         "Young": "Jeune",
         "Old": "Vieux",
-        "Hurt": "Hurt",
-        "Wreck": "A Wreck"
+        "Hurt": "Blessé",
+        "Wreck": "Anéanti"
       },
       "Successes": {
         "Basic": "Basique",
