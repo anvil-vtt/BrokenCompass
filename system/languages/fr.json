@@ -11,9 +11,9 @@
         "Homeland": "j'ai grandi",
         "Workplace": "je travaille",
         "Luck": "Chance",
-        "LuckCoin": "Pièce de chance",
+        "LuckCoin": "Porte-bonheur",
         "MaxLuck": "Chance max.",
-        "Word": "Mantra",
+        "Word": "Devise",
         "Feelings": "Je me sens",
         "Expertise": "Expertise",
         "Weapons": "Armes & équipement",
@@ -78,12 +78,12 @@
       "RollTheDice": "Lancer les dés",
       "FlipTheCoin": "Lancer la pièce",
       "Chat": {
-        "Roll": "Lancer",
-        "RestDice": "Dés restant",
+        "Roll": "Jet de dés",
+        "RestDice": "Dés restants",
         "Successes": "Succès",
-        "IHaveExpertise": "Je sus expert",
+        "IHaveExpertise": "Expertise",
         "ReRoll": "Prendre un risque",
-        "EqualDice": "Dés égaux",
+        "EqualDice": "Dés identiques",
         "AllIn": "quitte ou double"
       }
     }
