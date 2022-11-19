@@ -79,7 +79,7 @@ export class BCActorSheet extends ActorSheet {
       return;
     }
 
-    const roll = await new Roll(`1d2`).roll();
+    const roll = await new Roll(`1dc`).roll();
     const results = roll.terms[0] && roll.terms[0].results ? roll.terms[0].results : [];
 
     const chatData = {
