@@ -94,7 +94,7 @@ export class BCActorSheet extends ActorSheet {
 
     await ChatMessage.create(chatData);
 
-    if (results.length && results[0].result < 2) {
+    if (results.length && results[0].result < 1) {
       this.actor.update({
         ["data.luck.coins"]: coins - 1,
       });
