@@ -2,7 +2,7 @@
   "name": "brokencompass",
   "title": "Broken Compass",
   "description": "The basic Broken Compass system for FoundryVTT, based on the TTRPG from TwoLittleMice",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "author": "Patrick Bauer (Daddi#2333), RackNar#7343, Hauke Frahmann (hauke#9245)",
   "scripts": ["system.js"],
   "styles": [],
