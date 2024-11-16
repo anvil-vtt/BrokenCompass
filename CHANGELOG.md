@@ -1,5 +1,8 @@
 # Changelog
 
+### 1.0.7
+- Added support for Foundry VTT 12
+
 ### 1.0.1
 - Added italian language support
 
