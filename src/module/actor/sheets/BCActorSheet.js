@@ -85,7 +85,6 @@ export class BCActorSheet extends ActorSheet {
     const chatData = {
       user: game.user?._id,
       speaker: ChatMessage.getSpeaker({ actor: this.actor }),
-      type: CONST.CHAT_MESSAGE_TYPES.ROLL,
       sound: CONFIG.sounds.dice,
       roll: roll,
       rollMode: game.settings.get("core", "rollMode"),
