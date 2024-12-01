@@ -132,7 +132,7 @@ export class BCActorSheet extends ActorSheet {
 
       return {
         name: field.name,
-        value: this.actor.data.data.fields[field.name],
+        value: this.actor.system.fields[field.name],
         label: game.i18n.localize(`BC.Sheet.Fields.${this.capitalisation(field.name)}`),
         skills: skills,
         path: `system.fields.${field.name}`,
