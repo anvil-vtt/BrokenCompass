@@ -2,7 +2,7 @@
   "name": "brokencompass",
   "title": "Broken Compass",
   "description": "The basic Broken Compass system for FoundryVTT, based on the TTRPG from TwoLittleMice",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "author": "Patrick Bauer (Daddi#2333), RackNar#7343, Hauke Frahmann (hauke#9245)",
   "scripts": ["system.js"],
   "styles": [],
@@ -39,7 +39,7 @@
     }
   ],
   "minimumCoreVersion": "0.8.0",
-  "compatibleCoreVersion": "9",
+  "compatibleCoreVersion": "12",
   "url": "https://github.com/anvil-vtt/BrokenCompass",
   "manifest": "https://github.com/anvil-vtt/BrokenCompass/releases/latest/download/system.json",
   "download": "https://github.com/anvil-vtt/BrokenCompass/releases/latest/download/brokencompass.zip"

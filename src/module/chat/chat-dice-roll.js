@@ -36,7 +36,6 @@ export async function chatDiceRoll(diceAmount, keepPairs, rollCount, actor, expe
   const chatData = {
     user: game.user?._id,
     speaker: ChatMessage.getSpeaker({ actor }),
-    type: CONST.CHAT_MESSAGE_TYPES.ROLL,
     sound: CONFIG.sounds.dice,
     roll: roll,
     rollMode: game.settings.get("core", "rollMode"),

@@ -21,9 +21,9 @@ export class BCActorSheet extends ActorSheet {
   getData(options) {
     const data = super.getData(options);
     data.dice = [...Array(10).keys()].slice(2);
-    data.luck = [...Array(Number(this.actor.data.data.luck.maxPoints) + 1).keys()].slice(1).map((i) => ({
+    data.luck = [...Array(Number(this.actor.system.luck.maxPoints) + 1).keys()].slice(1).map((i) => ({
       value: i,
-      checked: i <= this.actor.data.data.luck.points ? "checked" : "",
+      checked: i <= this.actor.system.luck.points ? "checked" : "",
     }));
     data.fields = this.getFieldsAndSkills();
     data.feelings = this.getFeelings();
@@ -59,13 +59,13 @@ export class BCActorSheet extends ActorSheet {
 
     const target = $(e.currentTarget);
     const value = target.data("value");
-    if (Number(value) === 1 && this.actor.data.data.luck.points === 1) {
+    if (Number(value) === 1 && this.actor.system.luck.points === 1) {
       this.actor.update({
-        ["data.luck.points"]: 0,
+        ["system.luck.points"]: 0,
       });
     } else {
       this.actor.update({
-        ["data.luck.points"]: value,
+        ["system.luck.points"]: value,
       });
     }
   }
@@ -73,7 +73,7 @@ export class BCActorSheet extends ActorSheet {
   async _onCoinFlip(e) {
     e.preventDefault();
 
-    const { coins } = this.actor.data.data.luck;
+    const { coins } = this.actor.system.luck;
 
     if (coins < 1) {
       return;
@@ -85,7 +85,6 @@ export class BCActorSheet extends ActorSheet {
     const chatData = {
       user: game.user?._id,
       speaker: ChatMessage.getSpeaker({ actor: this.actor }),
-      type: CONST.CHAT_MESSAGE_TYPES.ROLL,
       sound: CONFIG.sounds.dice,
       roll: roll,
       rollMode: game.settings.get("core", "rollMode"),
@@ -96,7 +95,7 @@ export class BCActorSheet extends ActorSheet {
 
     if (results.length && results[0].result < 1) {
       this.actor.update({
-        ["data.luck.coins"]: coins - 1,
+        ["system.luck.coins"]: coins - 1,
       });
     }
   }
@@ -126,9 +125,9 @@ export class BCActorSheet extends ActorSheet {
     return fields.map((field) => {
       const skills = field.skills.map((skill) => ({
         name: skill,
-        value: this.actor.data.data.skills[skill],
+        value: this.actor.system.skills[skill],
         label: game.i18n.localize(`BC.Sheet.Skills.${this.capitalisation(skill)}`),
-        path: `data.skills.${skill}`,
+        path: `system.skills.${skill}`,
       }));
 
       return {
@@ -136,7 +135,7 @@ export class BCActorSheet extends ActorSheet {
         value: this.actor.data.data.fields[field.name],
         label: game.i18n.localize(`BC.Sheet.Fields.${this.capitalisation(field.name)}`),
         skills: skills,
-        path: `data.fields.${field.name}`,
+        path: `system.fields.${field.name}`,
       };
     });
   }
@@ -155,13 +154,13 @@ export class BCActorSheet extends ActorSheet {
       return {
         field: game.i18n.localize(`BC.Sheet.Fields.${this.capitalisation(i.name)}`),
         good: {
-          path: `data.feelings.${i.states[0]}`,
-          value: this.actor.data.data.feelings[i.states[0]],
+          path: `system.feelings.${i.states[0]}`,
+          value: this.actor.system.feelings[i.states[0]],
           name: game.i18n.localize(`BC.Sheet.Feelings.${this.capitalisation(i.states[0])}`),
         },
         bad: {
-          path: `data.feelings.${i.states[1]}`,
-          value: this.actor.data.data.feelings[i.states[1]],
+          path: `system.feelings.${i.states[1]}`,
+          value: this.actor.system.feelings[i.states[1]],
           name: game.i18n.localize(`BC.Sheet.Feelings.${this.capitalisation(i.states[1])}`),
         },
       };
