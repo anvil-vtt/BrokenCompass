@@ -97,8 +97,8 @@
     <h4 class="bc__ac__subheading">
       {{localize "BC.Sheet.Descriptions.Expertise"}}
     </h4>
-    {{#each system.expertise as |expert| }}
-      <input name="system.expertise.{{@key}}" type="text" value="{{expert}}" />
+    {{#each actor.system.expertise as |expert| }}
+      <input name="actor.system.expertise.{{@key}}" type="text" value="{{expert}}" />
     {{/each}}
   </section>
 
@@ -106,8 +106,8 @@
     <h4 class="bc__ac__subheading">
       {{localize "BC.Sheet.Descriptions.Scars"}}
     </h4>
-    {{#each system.scars as |scar| }}
-      <input name="system.scars.{{@key}}" type="text" value="{{scar}}" />
+    {{#each actor.system.scars as |scar| }}
+      <input name="actor.system.scars.{{@key}}" type="text" value="{{scar}}" />
     {{/each}}
   </section>
 
@@ -115,11 +115,11 @@
     <h4 class="bc__ac__subheading">
       {{localize "BC.Sheet.Descriptions.Weapons"}}
     </h4>
-    {{#each system.weapons as |weapon| }}
+    {{#each actor.system.weapons as |weapon| }}
       <div class="bc__ac__weapons_gear__row">
-        <input class="bc__ac__weapons_gear__name" name="system.weapons.{{@key}}.name" type="text"
+        <input class="bc__ac__weapons_gear__name" name="actor.system.weapons.{{@key}}.name" type="text"
                value="{{weapon.name}}" />
-        <input class="bc__ac__weapons_gear__description" name="system.weapons.{{@key}}.description" type="text"
+        <input class="bc__ac__weapons_gear__description" name="actor.system.weapons.{{@key}}.description" type="text"
                value="{{weapon.description}}" />
       </div>
     {{/each}}
@@ -129,8 +129,8 @@
     <h4 class="bc__ac__subheading">
       {{localize "BC.Sheet.Descriptions.Pockets"}}
     </h4>
-    {{#each system.pockets as |slot| }}
-      <input name="system.pockets.{{@key}}" type="text" value="{{slot}}" />
+    {{#each actor.system.pockets as |slot| }}
+      <input name="actor.system.pockets.{{@key}}" type="text" value="{{slot}}" />
     {{/each}}
   </section>
 
@@ -138,8 +138,8 @@
     <h4 class="bc__ac__subheading">
       {{localize "BC.Sheet.Descriptions.Bag"}}
     </h4>
-    {{#each system.bag as |slot| }}
-      <input name="system.bag.{{@key}}" type="text" value="{{slot}}" />
+    {{#each actor.system.bag as |slot| }}
+      <input name="actor.system.bag.{{@key}}" type="text" value="{{slot}}" />
     {{/each}}
   </section>
 
@@ -147,8 +147,8 @@
     <h4 class="bc__ac__subheading">
       {{localize "BC.Sheet.Descriptions.Backpack"}}
     </h4>
-    {{#each system.backpack as |slot| }}
-      <input name="system.backpack.{{@key}}" type="text" value="{{slot}}" />
+    {{#each actor.system.backpack as |slot| }}
+      <input name="actor.system.backpack.{{@key}}" type="text" value="{{slot}}" />
     {{/each}}
   </section>
 
@@ -162,12 +162,12 @@
       <span class="bc__ac__mags__label">Bag</span>
       <span class="bc__ac__mags__label">Backpack</span>
     </div>
-    {{#each system.mags as |slot| }}
+    {{#each actor.system.mags as |slot| }}
       <div class="bc__ac__mags__row">
-        <input class="bc__ac__mags__name" name="system.mags.{{@key}}.type" type="text" value="{{slot.type}}" />
-        <input class="bc__ac__mags__pocket" name="system.mags.{{@key}}.pocket" type="text" value="{{slot.pocket}}" />
-        <input class="bc__ac__mags__bag" name="system.mags.{{@key}}.bag" type="text" value="{{slot.bag}}" />
-        <input class="bc__ac__mags__backpack" name="system.mags.{{@key}}.backpack" type="text"
+        <input class="bc__ac__mags__name" name="actor.system.mags.{{@key}}.type" type="text" value="{{slot.type}}" />
+        <input class="bc__ac__mags__pocket" name="actor.system.mags.{{@key}}.pocket" type="text" value="{{slot.pocket}}" />
+        <input class="bc__ac__mags__bag" name="actor.system.mags.{{@key}}.bag" type="text" value="{{slot.bag}}" />
+        <input class="bc__ac__mags__backpack" name="actor.system.mags.{{@key}}.backpack" type="text"
                value="{{slot.backpack}}" />
       </div>
     {{/each}}
